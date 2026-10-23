@@ -35,6 +35,34 @@ export const ieltsPractice: IeltsTask[] = [
     ],
   },
   {
+    id: "ielts-listening-2",
+    section: "Listening",
+    title: "Listening Practice 2 — Tutorial Discussion",
+    minutes: 12,
+    instructionsMm:
+      "တက္ကသိုလ် ကျူတိုရီရယ်တွင် ကျောင်းသား နှစ်ဦးနှင့် ဆရာမ ဆွေးနွေးနေသည့် မူရင်း script ဖြစ်သည်။ ပထမအကြိမ် မေးခွန်းများကို ဖတ်ပြီး ဒုတိယအကြိမ် ဖတ်စဉ် အဖြေများကို မှတ်ပါ။ မေးခွန်း ၆ ခု၊ အချိန် ၁၂ မိနစ်။",
+    material: [
+      "Tutor: Let's look at your group project on campus waste. Where have you got to?",
+      "Student A: We collected data for two weeks, but we only weighed the bins in the main canteen.",
+      "Tutor: That's a reasonable start, though one building won't represent the whole campus. What did you find?",
+      "Student A: Food waste was about 40 per cent of the total, mostly rice and vegetables.",
+      "Student B: We also noticed that the recycling bins were often contaminated with food, so the company refused to collect them twice.",
+      "Tutor: That's an important point. The problem may be labelling rather than student attitudes. What would you recommend?",
+      "Student B: Clearer signs with pictures, and smaller bins placed next to the food counter.",
+      "Tutor: Good. Keep in mind that you must compare your figures with at least one published study. The deadline is Friday 14 November, and the report should be 1,500 words.",
+      "Student A: Could we submit a draft a week earlier for feedback?",
+      "Tutor: Yes, send it by the 7th and I'll return comments within three days.",
+    ],
+    exercises: [
+      { id: "il2-1", type: "mcq", prompt: "Where did the students collect their data?", promptMm: "အချက်အလက် ဘယ်နေရာတွင် ကောက်ခဲ့သလဲ။", options: ["the library", "the main canteen", "student dormitories", "the whole campus"], answer: 1, explanation: "'we only weighed the bins in the main canteen' ဟု ဆိုသည်။", topic: "ielts listening", level: "B2" },
+      { id: "il2-2", type: "fill", prompt: "Food waste made up about ___ per cent of the total.", promptMm: "ရာခိုင်နှုန်း ဖြည့်ပါ။", answers: ["40", "forty"], explanation: "'about 40 per cent of the total' ဟု ပြောထားသည်။", topic: "ielts listening", level: "B2" },
+      { id: "il2-3", type: "mcq", prompt: "Why were the recycling bins not collected?", promptMm: "ပြန်လည်အသုံးချ ပုံးများ ဘာကြောင့် မကောက်ခံရသလဲ။", options: ["They were too full.", "They were contaminated with food.", "They were in the wrong building.", "The company had no staff."], answer: 1, explanation: "'contaminated with food, so the company refused to collect them' ဟု ဆိုသည်။", topic: "ielts listening", level: "B2" },
+      { id: "il2-4", type: "mcq", prompt: "What does the tutor think is the real problem?", promptMm: "ဆရာမ အဆိုအရ အဓိက ပြဿနာက ဘာနည်း။", options: ["student attitudes", "labelling", "the collection company", "the canteen menu"], answer: 1, explanation: "'The problem may be labelling rather than student attitudes' ဟု ဆိုသည်။", topic: "ielts listening", level: "B2" },
+      { id: "il2-5", type: "fill", prompt: "The report must be ___ words.", promptMm: "စကားလုံး အရေအတွက် ဖြည့်ပါ။", answers: ["1,500", "1500", "fifteen hundred"], explanation: "'the report should be 1,500 words' ဟု ပြောထားသည်။", topic: "ielts listening", level: "B2" },
+      { id: "il2-6", type: "mcq", prompt: "When can the students submit a draft?", promptMm: "မူကြမ်း ဘယ်အချိန် တင်နိုင်သလဲ။", options: ["7 November", "14 November", "three days before the deadline", "no draft is allowed"], answer: 0, explanation: "'send it by the 7th' ဟု ဆိုသည် (deadline က 14 November)။", topic: "ielts listening", level: "B2" },
+    ],
+  },
+  {
     id: "ielts-reading-1",
     section: "Reading",
     title: "Reading Practice 1 — Urban Gardens",
@@ -142,6 +170,26 @@ export const ieltsWritingTasks: IeltsWritingTask[] = [
       "အချိန် ၄၀ မိနစ်အတွင်း ပြီးသလား။",
     ],
   },
+  {
+    id: "ielts-writing-3",
+    title: "Writing Task 2 — Problem and Solution",
+    minutes: 40,
+    promptMm:
+      "အောက်ပါ ခေါင်းစဉ်ကို စကားလုံး ၂၅၀ အနည်းဆုံးဖြင့် မိနစ် ၄၀ အတွင်း ရေးပါ။ ပြဿနာကို ရှင်းပြပြီး လက်တွေ့ကျသော ဖြေရှင်းနည်းများ အဆိုပြုပါ။ ဖြေရှင်းနည်းတစ်ခုစီအတွက် ဘာကြောင့် ထိရောက်မည်ကို ရှင်းပြပါ။",
+    promptEn:
+      "In many cities, young people find it difficult to afford housing near their workplace or university. What problems does this cause, and what measures could governments take to address them?",
+    wordTarget: [250, 320],
+    modelAnswer:
+      "Housing costs in many cities have risen far faster than wages, and young adults are often the first to feel the consequences. This essay outlines the main problems and suggests two practical responses.\n\nThe most immediate problem is long commuting. When affordable housing is pushed to the edge of a city, workers may spend two or three hours a day travelling. This reduces productivity and leaves little time for study, exercise or family. A second problem is that young people delay major decisions: some postpone training, and others leave the city altogether, which deprives local employers of the staff they need. In some neighbourhoods, overcrowding also creates pressure on schools and health services.\n\nGovernments have two realistic options. The first is to increase the supply of affordable housing through public-private partnerships. If a city offers developers tax reductions in exchange for a fixed proportion of low-cost units, the cost to the taxpayer stays modest while supply rises. Singapore's approach to public housing suggests that such schemes can work at scale when rules are stable.\n\nA second measure is to make commuting cheaper and faster rather than expecting people to move. Subsidised rail passes and reliable bus corridors allow workers to live further away without losing hours each day. In my view, this is the quickest option, since it can be implemented within a single budget cycle.\n\nIn conclusion, expensive housing affects productivity and life choices, not only personal finances. Combining a larger affordable housing supply with better transport would ease the problem more effectively than either policy alone.",
+    checklist: [
+      "ပြဿနာများကို စာပိုဒ်တစ်ပိုဒ်ဖြင့် ရှင်းပြထားသလား။",
+      "ဖြေရှင်းနည်း နှစ်ခု သို့မဟုတ် သုံးခု ပေးထားသလား။",
+      "ဖြေရှင်းနည်းတိုင်းအတွက် ထိရောက်ရသည့် အကြောင်းရင်း ရှင်းပြထားသလား။",
+      "ဥပမာ တစ်ခု ထည့်ထားသလား။",
+      "နိဂုံးတွင် ကိုယ်ပိုင် ရပ်တည်ချက် ပါသလား။",
+      "စကားလုံး ၂၅၀ ပြည့်သလား။",
+    ],
+  },
 ];
 
 export const ieltsSpeaking = {
@@ -156,6 +204,8 @@ export const ieltsSpeaking = {
         "Do you work or are you a student?",
         "What do you usually do in your free time?",
         "Do you prefer reading paper books or digital books? Why?",
+        "How often do you use English outside the classroom?",
+        "What kind of music do you enjoy, and why?",
       ],
       tipsMm: "ဖြေချက်တိုင်းကို ဝါကျ ၂–၃ ကြောင်းဖြင့် ဖြေပါ။ ဥပမာလေးတစ်ခု ထည့်ပါ။",
     },
@@ -164,6 +214,7 @@ export const ieltsSpeaking = {
       minutes: 3,
       questions: [
         "Describe a skill you would like to learn. Say what it is, why you want to learn it, how you would learn it, and how it might help you.",
+        "Describe a place in your town that visitors should see. Say where it is, what you can do there, who you would take, and why it is worth visiting.",
       ],
       tipsMm: "၁ မိနစ် ပြင်ဆင်ပါ။ ၂ မိနစ် ပြောပါ။ မှတ်စုကို စကားလုံးတိုများဖြင့် ရေးပါ။",
     },
@@ -174,6 +225,8 @@ export const ieltsSpeaking = {
         "Why do some people find it difficult to learn new skills as adults?",
         "Should employers pay for their staff to learn new skills?",
         "How has technology changed the way people learn?",
+        "Should schools teach practical skills such as budgeting and cooking? Why?",
+        "Do you think exams are a fair way to measure ability?",
       ],
       tipsMm: "ထင်မြင်ချက် + အကြောင်းပြချက် + ဥပမာ ဖွဲ့စည်းပုံကို သုံးပါ။",
     },

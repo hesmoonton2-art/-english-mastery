@@ -156,4 +156,97 @@ export const writingTasks: WritingTask[] = [
       "According to the article ဖြင့် ရင်းမြစ် ကိုးကားပါ။",
     ],
   },
+  {
+    id: "w6-landlord-email",
+    title: "Email to a Landlord",
+    titleMm: "အိမ်ပိုင်ရှင်ထံ အီးမေးလ်",
+    level: "B1",
+    kind: "email",
+    promptMm:
+      "ငှားနေသော အခန်းတွင် ရေပိုက် ယိုနေသည်။ အိမ်ပိုင်ရှင်ထံ အီးမေးလ် ရေးပါ။ ပြဿနာကို ဖော်ပြပါ၊ မည်မျှကြာကြာ ဖြစ်နေသည်ကို ပြောပါ၊ ပြုပြင်ပေးရန် သင့်တင့်စွာ တောင်းဆိုပါ။ စကားလုံး ၉၀–၁၂၀ အတွင်း ရေးပါ။",
+    promptEn:
+      "Write an email to your landlord about a leaking pipe in the flat you rent. Describe the problem, say how long it has been happening, and politely ask for a repair. 90–120 words.",
+    wordTarget: [90, 120],
+    checklist: [
+      "ခေါင်းစဉ် (subject line) ပါသလား။",
+      "ပြဿနာကို တိကျစွာ ဖော်ပြထားသလား (ရေပိုက်၊ ဘယ်နေရာ)။",
+      "ဘယ်လောက်ကြာကြာ ဖြစ်နေသည်ကို ဖော်ပြထားသလား။",
+      "သင့်တင့်သော တောင်းဆိုမှု (Could you please…) ပါသလား။",
+      "ပိတ်သိမ်းစကား (Yours sincerely / Kind regards) ပါသလား။",
+    ],
+    rubric: [
+      { criterion: "Task response", bands: ["အချက်များ မပါ / မတောင်းဆိုထား", "အချက်တချို့ ပါ", "အချက်အားလုံး ပါပြီး ရည်ရွယ်ချက် ရှင်းလင်း"] },
+      { criterion: "Tone", bands: ["ရိုင်းစိုင်း / အလွန်တိုတို", "တစ်စိတ်တစ်ပိုင်း သင့်တင့်", "ယဉ်ကျေးပြီး သင့်တင့်"] },
+      { criterion: "Language", bands: ["အမှား များ", "အမှား အနည်းငယ်", "တိကျပြီး သဘာဝကျ"] },
+    ],
+    sample:
+      "Subject: Leaking pipe in the bathroom\n\nDear U Aung,\n\nI am writing to let you know about a problem in the flat. The pipe under the bathroom sink has been leaking for about five days, and the floor is now always wet. I have put a bucket underneath it, but water is starting to reach the wooden cupboard.\n\nCould you please arrange for a plumber to come this week? I am at home after six o'clock on weekdays and all day on Saturday, so any of those times would be convenient.\n\nThank you for your help.\n\nKind regards,\nMa Thiri",
+    tips: [
+      "အီးမေးလ်တွင် ခေါင်းစဉ် တစ်ကြောင်း အမြဲ ထည့်ပါ။",
+      "တောင်းဆိုမှုကို 'Could you please…' ဖြင့် ယဉ်ကျေးစွာ ရေးပါ။",
+      "အချိန် နှင့် နေရာ အတိအကျ ပေးပါ — လုပ်ငန်း မြန်ဆန်စေသည်။",
+    ],
+  },
+  {
+    id: "w7-bar-chart",
+    title: "Describing a Bar Chart (IELTS Task 1)",
+    titleMm: "ဘားချာ့ခ် ဖော်ပြခြင်း (IELTS Task 1)",
+    level: "B2",
+    kind: "report",
+    promptMm:
+      "အောက်ပါ အချက်အလက်ကို အခြေခံပြီး IELTS Task 1 ပုံစံ ဖော်ပြချက် ရေးပါ — ၂၀၁၅ နှင့် ၂၀၂၅ တွင် မန္တလေးမြို့ လူငယ်များ၏ အားလပ်ချိန် လှုပ်ရှားမှု ရွေးချယ်မှု (%)။ ၂၀၁၅ — စက်ဘီးစီးခြင်း ၄၀၊ ဖုန်းသုံးခြင်း ၂၅၊ စာဖတ်ခြင်း ၂၀၊ အားကစား ၁၅။ ၂၀၂၅ — စက်ဘီးစီးခြင်း ၂၀၊ ဖုန်းသုံးခြင်း ၄၅၊ စာဖတ်ခြင်း ၁၀၊ အားကစား ၂၅။ အဓိက လမ်းကြောင်းကို ဖော်ပြပါ။ စကားလုံး ၁၅၀ ခန့်။",
+    promptEn:
+      "Describe the chart: leisure activities chosen by young people in Mandalay (%), 2015 and 2025. Cycling 40 → 20; phone use 25 → 45; reading 20 → 10; sport 15 → 25. Summarise the main trends in about 150 words.",
+    wordTarget: [140, 170],
+    checklist: [
+      "နိဒါန်းတွင် ဇယား ဘာကို ပြသည်ကို တစ်ကြောင်း ရေးထားသလား။",
+      "အဓိက လမ်းကြောင်း (overall trend) ကို ဒုတိယ စာပိုဒ်တွင် ဖော်ပြထားသလား။",
+      "ဂဏန်း အနည်းဆုံး ၄ ခု ကိုးကားထားသလား။",
+      "အတိုးအလျော့ စကားလုံးများ (rose, fell, doubled, halved) သုံးထားသလား။",
+      "ကိုယ်ပိုင် အကြောင်းရင်း ရှင်းလင်းချက် မထည့်ထားသလား (Task 1 တွင် မလိုအပ်)။",
+    ],
+    rubric: [
+      { criterion: "Data coverage", bands: ["ဂဏန်း အနည်းငယ်သာ", "ဂဏန်း အချို့ ပါ", "ဂဏန်း အားလုံး သို့မဟုတ် ကိုယ်စားပြု ဂဏန်းများ ပါ"] },
+      { criterion: "Overview", bands: ["မပါ", "အကြမ်းဖျင်း ပါ", "အဓိက လမ်းကြောင်း ရှင်းလင်း"] },
+      { criterion: "Language", bands: ["စကားလုံး အကန့်အသတ်", "အမှား အနည်းငယ်", "အမျိုးမျိုး သုံးထားပြီး တိကျ"] },
+    ],
+    sample:
+      "The bar chart compares the leisure activities chosen by young people in Mandalay in 2015 and 2025.\n\nOverall, cycling was the most popular activity in 2015, but it was replaced by phone use a decade later. Reading was the least popular choice in both years.\n\nIn 2015, two fifths of young people chose cycling, compared with a quarter who used their phones and a fifth who read. Sport was the least common activity at 15 per cent.\n\nBy 2025, the pattern had reversed. Phone use had risen sharply to 45 per cent, while cycling had halved to 20 per cent. Sport grew modestly to 25 per cent, and reading fell to 10 per cent, making it the least popular activity of the four.",
+    tips: [
+      "Task 1 တွင် ကိုယ်ပိုင် ထင်မြင်ချက် မထည့်ပါနှင့် — ဒေတာကိုသာ ဖော်ပြပါ။",
+      "overall trend ကို ဒုတိယ စာပိုဒ်တွင် ရှင်းရှင်း ရေးပါ။",
+      "ဂဏန်းတိုင်း မဟုတ်ဘဲ အဓိက ဂဏန်းများကို ရွေးချယ်ပြီး နှိုင်းယှဉ်ပါ။",
+    ],
+  },
+  {
+    id: "w8-journey-narrative",
+    title: "A Memorable Journey",
+    titleMm: "မမေ့နိုင်သော ခရီးတစ်ခု",
+    level: "B1",
+    kind: "narrative",
+    promptMm:
+      "သင် မမေ့နိုင်သော ခရီးတစ်ခုအကြောင်း ရေးပါ။ ဘယ်ကို သွားခဲ့သည်၊ ဘယ်သူနှင့် သွားခဲ့သည်၊ ဘာဖြစ်ခဲ့သည် နှင့် ဘာကြောင့် မမေ့နိုင်သည်ကို ဖော်ပြပါ။ အတိတ်ကာလ (past simple / past continuous) ကို မှန်ကန်စွာ သုံးပါ။ စကားလုံး ၁၂၀–၁၅၀။",
+    promptEn:
+      "Write about a journey you will never forget: where you went, who you went with, what happened, and why it stayed with you. 120–150 words.",
+    wordTarget: [120, 150],
+    checklist: [
+      "ခရီးဆုံး နေရာ နှင့် အချိန် ပါသလား။",
+      "ဘယ်သူနှင့် သွားခဲ့သည်ကို ဖော်ပြထားသလား။",
+      "ဖြစ်ရပ် အစီအစဉ် ရှင်းရှင်း (ပထမ၊ ထို့နောက်၊ နောက်ဆုံး) ပါသလား။",
+      "past simple နှင့် past continuous ကို တွဲသုံးထားသလား။",
+      "ဘာကြောင့် မမေ့နိုင်သည်ကို နိဂုံးတွင် ရေးထားသလား။",
+    ],
+    rubric: [
+      { criterion: "Narrative flow", bands: ["အစီအစဉ် မရှင်း", "အစီအစဉ် အနည်းငယ် ရှင်း", "အစီအစဉ် ရှင်းပြီး စိတ်ဝင်စားဖွယ်"] },
+      { criterion: "Past tenses", bands: ["အမှား များ", "အမှား အနည်းငယ်", "past simple / continuous မှန်ကန်"] },
+      { criterion: "Detail", bands: ["အသေးစိတ် မပါ", "အသေးစိတ် အနည်းငယ်", "အာရုံငါးပါး ဖော်ပြချက် ပါဝင်"] },
+    ],
+    sample:
+      "The journey I remember most clearly was a trip to Inle Lake with my cousin in December 2023. We took the night bus from Mandalay and arrived at sunrise, when the water was still and the mist was hanging over the hills.\n\nWe hired a small boat and visited a weaving workshop. While we were watching the women work, our engine suddenly stopped in the middle of the lake. My cousin laughed, but I was nervous because the boat was drifting towards the reeds. Fortunately, a fisherman noticed us and pulled us back to the village.\n\nWhat made the trip unforgettable was not the scenery, but the kindness of that stranger. He refused to accept any money and simply waved as we left.",
+    tips: [
+      "ဖြစ်ရပ်ကို အချိန် အစီအစဉ်အတိုင်း ရေးပါ — ဖတ်ရ လွယ်စေသည်။",
+      "past continuous ဖြင့် နောက်ခံ အခြေအနေ၊ past simple ဖြင့် အဓိက ဖြစ်ရပ် ရေးပါ။",
+      "နိဂုံးတွင် ခံစားချက် တစ်ကြောင်း ထည့်ပါ။",
+    ],
+  },
 ];

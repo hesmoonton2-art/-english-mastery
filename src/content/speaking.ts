@@ -149,4 +149,113 @@ export const speakingTasks: SpeakingTask[] = [
       },
     ],
   },
+
+  {
+    id: "s5-doctor-visit",
+    title: "Describing Symptoms at a Clinic",
+    titleMm: "ဆေးခန်းတွင် ရောဂါလက္ခဏာ ဖော်ပြခြင်း",
+    level: "A2",
+    situationMm: "ဆေးခန်းသို့ သွားပြီး ဆရာဝန်ကို သင့်ရောဂါလက္ခဏာများ ရှင်းပြရမည်။ ဘယ်အချိန်ကတည်းက ဖြစ်နေသည်၊ ဘယ်လိုခံစားရသည်ကို ရှင်းရှင်းလင်းလင်း ပြောပါ။",
+    goalMm: "ရောဂါလက္ခဏာ ဖော်ပြခြင်း၊ အချိန်ကာလ ပြောခြင်း နှင့် မေးခွန်း မေးခြင်းတို့ကို ပြုလုပ်နိုင်ရန်။",
+    usefulPhrases: [
+      { en: "I've had a headache since Monday.", mm: "တနင်္လာနေ့ကတည်းက ခေါင်းကိုက်နေပါတယ်။" },
+      { en: "It hurts when I swallow.", mm: "မျိုချတဲ့အခါ နာပါတယ်။" },
+      { en: "Should I take this medicine after meals?", mm: "ဒီဆေးကို အစာစားပြီးမှ သောက်ရမလား။" },
+      { en: "How often should I take it?", mm: "ဘယ်လောက်ခြားပြီး သောက်ရမလဲ။" },
+    ],
+    prompts: [
+      {
+        en: "Tell the doctor what is wrong and when it started.",
+        mm: "ဆရာဝန်ကို ဘာဖြစ်နေသည်၊ ဘယ်အချိန်က စခဲ့သည်ကို ပြောပါ။",
+        modelAnswer: "I've had a sore throat and a mild fever since Monday. It hurts when I swallow, and I feel tired in the afternoon.",
+      },
+      {
+        en: "The doctor asks if you are allergic to any medicine. Answer clearly.",
+        mm: "ဆေးနှင့် မတည့်မှု ရှိမရှိ မေးလာသည်။ ရှင်းလင်းစွာ ဖြေပါ။",
+        modelAnswer: "I'm not allergic to any medicine, but I sometimes get a stomach ache from strong painkillers.",
+      },
+      {
+        en: "Ask the doctor two questions about the treatment.",
+        mm: "ကုသမှုနှင့် ပတ်သက်၍ မေးခွန်း နှစ်ခု မေးပါ။",
+        modelAnswer: "How often should I take this medicine, and should I come back if the fever doesn't go down in three days?",
+      },
+      {
+        en: "Repeat the instructions back to check you understood.",
+        mm: "နားလည်ကြောင်း အတည်ပြုရန် ညွှန်ကြားချက်ကို ပြန်ပြောပါ။",
+        modelAnswer: "So, one tablet three times a day after meals, and plenty of water. Is that right?",
+      },
+    ],
+  },
+  {
+    id: "s6-job-interview",
+    title: "A Short Job Interview",
+    titleMm: "အလုပ်အင်တာဗျူး အတို",
+    level: "B1",
+    situationMm: "ဆိုင်တစ်ခုတွင် အချိန်ပိုင်း ဝန်ထမ်း လျှောက်ထားသည်။ အင်တာဗျူးသူက သင့်အတွေ့အကြုံ၊ အချိန်နှင့် ခွန်အားများအကြောင်း မေးမည်။ ရိုးသားပြီး ရှင်းလင်းစွာ ဖြေပါ။",
+    goalMm: "STAR ပုံစံ (Situation–Task–Action–Result) ဖြင့် အတွေ့အကြုံ ပြောနိုင်ရန်။",
+    usefulPhrases: [
+      { en: "I worked as a cashier for six months last year.", mm: "မနှစ်က ခြောက်လ ငွေကိုင် အလုပ် လုပ်ခဲ့ပါတယ်။" },
+      { en: "I'm available on weekday evenings and all day at the weekend.", mm: "ရက်သတ္တပတ် ညနေများနှင့် စနေ တနင်္ဂနွေ တစ်နေကုန် အားပါတယ်။" },
+      { en: "One thing I'd like to improve is my spoken English.", mm: "ကျွန်တော် တိုးတက်ချင်တာ တစ်ခုက ပြောဆိုရေး အင်္ဂလိပ်စာပါ။" },
+      { en: "Could you tell me more about the training?", mm: "သင်တန်းအကြောင်း ပိုပြီး ပြောပြနိုင်မလား။" },
+    ],
+    prompts: [
+      {
+        en: "Introduce yourself and say why you applied.",
+        mm: "ကိုယ့်ကိုယ်ကို မိတ်ဆက်ပြီး ဘာကြောင့် လျှောက်ထားသည်ကို ပြောပါ။",
+        modelAnswer: "I'm Ko Min, an 18-year-old student. I applied because I want to build customer service experience, and I enjoy working with people.",
+      },
+      {
+        en: "Describe a time you solved a problem at work or school (use STAR).",
+        mm: "အလုပ် သို့မဟုတ် ကျောင်းတွင် ပြဿနာ ဖြေရှင်းခဲ့သည့် အချိန်တစ်ခုကို ပြောပါ။",
+        modelAnswer: "Last year, during our school fair, the queue at our food stall was very long. I suggested splitting it into two lines, one for drinks and one for food. Waiting time fell from ten minutes to about four, and we sold out earlier than expected.",
+      },
+      {
+        en: "What is your weakness? Answer honestly but positively.",
+        mm: "သင့်အားနည်းချက်က ဘာလဲ။ ရိုးသားပြီး အပြုသဘောဆောင်စွာ ဖြေပါ။",
+        modelAnswer: "I sometimes speak too quickly when I'm nervous. I've started writing down two or three key points before an important conversation, which helps me slow down.",
+      },
+      {
+        en: "Ask one question about the job.",
+        mm: "အလုပ်နှင့် ပတ်သက်၍ မေးခွန်း တစ်ခု မေးပါ။",
+        modelAnswer: "Could you tell me what a typical Saturday shift looks like and how much training new staff receive?",
+      },
+    ],
+  },
+  {
+    id: "s7-ielts-part3",
+    title: "IELTS Speaking Part 3: Extended Discussion",
+    titleMm: "IELTS Speaking အပိုင်း (၃) — ဆွေးနွေးမှု",
+    level: "B2",
+    situationMm: "IELTS Speaking Part 3 ကဲ့သို့ လူမှုရေး အကြောင်းအရာတစ်ခုအပေါ် အမြင်ကို ၄–၅ ကြောင်းဖြင့် ရှင်းပြရမည်။ ကိုယ်ပိုင် အမြင် + အကြောင်းရင်း + ဥပမာ ဖွဲ့စည်းမှုကို သုံးပါ။",
+    goalMm: "အမြင်တစ်ခုကို အကြောင်းရင်းနှင့် ဥပမာဖြင့် ၃၀–၄၀ စက္ကန့် ပြောနိုင်ရန်။",
+    usefulPhrases: [
+      { en: "On balance, I'd say ...", mm: "ခြုံကြည့်လျှင် ကျွန်တော်ဆိုရရင် ..." },
+      { en: "The main reason for this is that ...", mm: "ဒီအတွက် အဓိက အကြောင်းရင်းက ..." },
+      { en: "Take my own experience, for example.", mm: "ကျွန်တော့် အတွေ့အကြုံကို ဥပမာ ယူပါ။" },
+      { en: "That said, I can see the other side of the argument.", mm: "ဒါပေမယ့် ဆန့်ကျင်ဘက် အမြင်ကိုလည်း နားလည်ပါတယ်။" },
+    ],
+    prompts: [
+      {
+        en: "Do you think people rely too much on their phones?",
+        mm: "လူများ ဖုန်းအပေါ် အလွန်အကျွံ မှီခိုနေသည်ဟု ထင်ပါသလား။",
+        modelAnswer: "On balance, I'd say yes, especially for small daily tasks. People check maps, prices and messages instead of asking someone nearby. The main reason is convenience, but I think it reduces face-to-face contact. That said, phones also help people stay in touch across long distances, so the effect isn't entirely negative.",
+      },
+      {
+        en: "Should schools teach practical skills such as cooking and budgeting?",
+        mm: "ကျောင်းများတွင် ချက်ပြုတ်ခြင်း၊ ငွေစီမံခန့်ခွဲခြင်းကဲ့သို့ လက်တွေ့ ကျွမ်းကျင်မှုများ သင်ပေးသင့်ပါသလား။",
+        modelAnswer: "I'd argue they should, at least in the final two years. Most students leave school able to solve equations but unable to plan a monthly budget. Take my own experience, for example: I learned to cook only after I moved away, and it cost me far more than it should have. A short weekly class would prevent that.",
+      },
+      {
+        en: "Is it better to live in a city or in the countryside?",
+        mm: "မြို့ သို့မဟုတ် ကျေးလက်တွင် နေထိုင်ခြင်း ဘယ်ဟာ ပိုကောင်းသလဲ။",
+        modelAnswer: "It depends on the stage of life, I think. Cities offer jobs, hospitals and universities within reach, which matters for young professionals. However, the noise and cost can be exhausting, and older people often prefer the slower pace of the countryside. Given the choice, I'd live in a smaller town near a city — a compromise between both.",
+      },
+      {
+        en: "How might work change in the next twenty years?",
+        mm: "လာမည့် အနှစ် နှစ်ဆယ်အတွင်း အလုပ်အကိုင် ဘယ်လို ပြောင်းလဲနိုင်သလဲ။",
+        modelAnswer: "I expect routine tasks to be automated first, which will affect factories and offices alike. That doesn't mean fewer jobs overall, but it does mean people will need to retrain more often. The biggest challenge will probably be education: systems that assume one qualification lasts a lifetime will struggle to keep up.",
+      },
+    ],
+  },
 ];

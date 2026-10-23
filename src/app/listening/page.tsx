@@ -13,7 +13,7 @@ export default function ListeningListPage() {
       <PageHeader
         title="နားထောင်မှု"
         titleMm="Listening"
-        description="မူရင်း script လေးခုကို ဤသင်ရိုးအတွက် ရေးသားထားသည်။ အသံဖိုင် မပါဝင်ပါ — script ကို ကိုယ်တိုင် ဖတ်ပြီး (သို့မဟုတ် မိတ်ဆွေတစ်ဦးက ဖတ်ပေးပြီး) နားထောင်မှု လေ့ကျင့်နိုင်သည်။"
+        description={`မူရင်း script ${listeningScripts.length} ခုကို ဤသင်ရိုးအတွက် ရေးသားထားသည်။ အသံဖိုင် မပါဝင်ပါ — script ကို ကိုယ်တိုင် ဖတ်ပြီး (သို့မဟုတ် မိတ်ဆွေတစ်ဦးက ဖတ်ပေးပြီး) နားထောင်မှု လေ့ကျင့်နိုင်သည်။`}
         actions={<Badge tone="brand">Script {listeningScripts.length} ခု</Badge>}
       />
 

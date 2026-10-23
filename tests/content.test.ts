@@ -278,3 +278,40 @@ test("IELTS practice sets are complete and clearly unofficial", () => {
     assert.ok(task.checklist.length >= 3, `${task.id}: short checklist`);
   }
 });
+
+test("every content and exercise id is unique across the whole library", () => {
+  const itemIds = [
+    ...lessons.map((lesson) => lesson.id),
+    ...readingPassages.map((passage) => passage.id),
+    ...listeningScripts.map((script) => script.id),
+    ...writingTasks.map((task) => task.id),
+    ...speakingTasks.map((task) => task.id),
+    ...quizzes.map((quiz) => quiz.id),
+    ...ieltsPractice.map((task) => task.id),
+    ...ieltsWritingTasks.map((task) => task.id),
+  ];
+  const duplicateItems = itemIds.filter((id, index) => itemIds.indexOf(id) !== index);
+  assert.deepEqual(duplicateItems, [], "duplicate content id");
+
+  const exerciseIds = [
+    ...lessons.flatMap((lesson) => [...lesson.guided, ...lesson.independent]).map((exercise) => exercise.id),
+    ...readingPassages.flatMap((passage) => passage.questions).map((exercise) => exercise.id),
+    ...listeningScripts.flatMap((script) => script.questions).map((exercise) => exercise.id),
+    ...quizzes.flatMap((quiz) => quiz.exercises).map((exercise) => exercise.id),
+    ...ieltsPractice.flatMap((task) => task.exercises).map((exercise) => exercise.id),
+  ];
+  const duplicateExercises = exerciseIds.filter((id, index) => exerciseIds.indexOf(id) !== index);
+  assert.deepEqual(duplicateExercises, [], "duplicate exercise id");
+  assert.ok(exerciseIds.length >= 1600, `exercise library shrank to ${exerciseIds.length}`);
+});
+
+test("the mock exam is timed, long enough and mixed in difficulty", () => {
+  const mock = quizzes.find((quiz) => quiz.id === "mock-exam-1");
+  assert.ok(mock, "mock exam missing");
+  assert.ok(mock.timeLimitMin && mock.timeLimitMin >= 15, "mock exam must be timed");
+  assert.ok(mock.exercises.length >= 20, "mock exam too short");
+  const levels = new Set(mock.exercises.map((exercise) => exercise.level));
+  assert.ok(levels.size >= 3, "mock exam should span several CEFR levels");
+  const types = new Set(mock.exercises.map((exercise) => exercise.type));
+  assert.ok(types.size >= 3, "mock exam should use several exercise types");
+});
