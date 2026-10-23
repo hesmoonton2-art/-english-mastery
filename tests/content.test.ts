@@ -7,6 +7,8 @@ import { moduleALessonsPart3 } from "../src/content/lessons/module-a3.ts";
 import { moduleALessonsPart4 } from "../src/content/lessons/module-a4.ts";
 import { moduleBLessonsPart1 } from "../src/content/lessons/module-b1.ts";
 import { moduleBLessonsPart2 } from "../src/content/lessons/module-b2.ts";
+import { moduleBLessonsPart3 } from "../src/content/lessons/module-b3.ts";
+import { moduleBLessonsPart4 } from "../src/content/lessons/module-b4.ts";
 import { moduleCLessons } from "../src/content/lessons/module-c.ts";
 import { moduleDLessons } from "../src/content/lessons/module-d.ts";
 import { moduleEFLessons } from "../src/content/lessons/module-ef.ts";
@@ -18,6 +20,32 @@ import { writingTasks } from "../src/content/writing.ts";
 import { speakingTasks } from "../src/content/speaking.ts";
 import { estimateCefr, quizzes } from "../src/content/quizzes.ts";
 import { ieltsPractice, ieltsWritingTasks } from "../src/content/ielts.ts";
+import { moduleBLessonsPart5 } from "../src/content/lessons/module-b5.ts";
+import { moduleBLessonsPart6 } from "../src/content/lessons/module-b6.ts";
+import { moduleBLessonsPart7 } from "../src/content/lessons/module-b7.ts";
+import { moduleBLessonsPart8 } from "../src/content/lessons/module-b8.ts";
+import { moduleCLessonsPart2 } from "../src/content/lessons/module-c2.ts";
+import { moduleCLessonsPart3 } from "../src/content/lessons/module-c3.ts";
+import { moduleCLessonsPart4 } from "../src/content/lessons/module-c4.ts";
+import { moduleCLessonsPart5 } from "../src/content/lessons/module-c5.ts";
+import { moduleCLessonsPart6 } from "../src/content/lessons/module-c6.ts";
+import { moduleDLessonsPart2 } from "../src/content/lessons/module-d2.ts";
+import { moduleDLessonsPart3 } from "../src/content/lessons/module-d3.ts";
+import { moduleDLessonsPart4 } from "../src/content/lessons/module-d4.ts";
+import { moduleEFLessonsPart2 } from "../src/content/lessons/module-e2.ts";
+import { moduleEFLessonsPart3 } from "../src/content/lessons/module-e3.ts";
+import { moduleEFLessonsPart4 } from "../src/content/lessons/module-ef2.ts";
+import { moduleEFLessonsPart5 } from "../src/content/lessons/module-f2.ts";
+import { moduleEFLessonsPart6 } from "../src/content/lessons/module-f3.ts";
+import { moduleGLessonsPart2 } from "../src/content/lessons/module-g2.ts";
+import { moduleGLessonsPart3 } from "../src/content/lessons/module-g3.ts";
+import { moduleGLessonsPart4 } from "../src/content/lessons/module-g4.ts";
+import { moduleHLessonsPart2 } from "../src/content/lessons/module-h2.ts";
+import { moduleHLessonsPart3 } from "../src/content/lessons/module-h3.ts";
+import { moduleHLessonsPart4 } from "../src/content/lessons/module-h4.ts";
+import { moduleILessons } from "../src/content/lessons/module-i.ts";
+import { moduleILessonsPart2 } from "../src/content/lessons/module-i2.ts";
+import { moduleHLessonsPart5 } from "../src/content/lessons/module-h5.ts";
 import { plannedLessons } from "../src/content/curriculum.ts";
 import type { Exercise } from "../src/lib/types.ts";
 
@@ -28,11 +56,39 @@ const lessons = [
   ...moduleALessonsPart4,
   ...moduleBLessonsPart1,
   ...moduleBLessonsPart2,
+  ...moduleBLessonsPart3,
+  ...moduleBLessonsPart4,
   ...moduleCLessons,
   ...moduleDLessons,
   ...moduleEFLessons,
   ...moduleGLessons,
   ...moduleHLessons,
+  ...moduleBLessonsPart5,
+  ...moduleBLessonsPart6,
+  ...moduleBLessonsPart7,
+  ...moduleBLessonsPart8,
+  ...moduleCLessonsPart2,
+  ...moduleCLessonsPart3,
+  ...moduleCLessonsPart4,
+  ...moduleCLessonsPart5,
+  ...moduleCLessonsPart6,
+  ...moduleDLessonsPart2,
+  ...moduleDLessonsPart3,
+  ...moduleDLessonsPart4,
+  ...moduleEFLessonsPart2,
+  ...moduleEFLessonsPart3,
+  ...moduleEFLessonsPart4,
+  ...moduleEFLessonsPart5,
+  ...moduleEFLessonsPart6,
+  ...moduleGLessonsPart2,
+  ...moduleGLessonsPart3,
+  ...moduleGLessonsPart4,
+  ...moduleHLessonsPart2,
+  ...moduleHLessonsPart3,
+  ...moduleHLessonsPart4,
+  ...moduleILessons,
+  ...moduleILessonsPart2,
+  ...moduleHLessonsPart5,
 ];
 
 function assertExercise(exercise: Exercise, where: string) {
@@ -72,8 +128,11 @@ test("lesson library is large enough and free of duplicate ids or titles", () =>
 test("the roadmap covers the 180–240 lesson target", () => {
   const total = lessons.length + plannedLessons.length;
   assert.ok(total >= 180 && total <= 240, `roadmap has ${total} entries`);
-  assert.ok(plannedLessons.length >= 100, "planned roadmap entries are too few");
-  assert.equal(lessons.length + plannedLessons.length, 181, "roadmap total changed unexpectedly");
+  assert.ok(lessons.length >= 80, "authored lesson count dropped below the milestone");
+  assert.equal(lessons.length + plannedLessons.length, 185, "roadmap total changed unexpectedly");
+  if (plannedLessons.length === 0) {
+    assert.equal(lessons.length, 185, "planned roadmap is empty while the authored roadmap is still incomplete");
+  }
   const plannedIds = plannedLessons.map((lesson) => lesson.id);
   assert.equal(new Set(plannedIds).size, plannedIds.length, "duplicate planned lesson id");
   for (const lesson of plannedLessons) {

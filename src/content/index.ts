@@ -11,6 +11,8 @@ import { moduleALessonsPart3 } from "./lessons/module-a3";
 import { moduleALessonsPart4 } from "./lessons/module-a4";
 import { moduleBLessonsPart1 } from "./lessons/module-b1";
 import { moduleBLessonsPart2 } from "./lessons/module-b2";
+import { moduleBLessonsPart3 } from "./lessons/module-b3";
+import { moduleBLessonsPart4 } from "./lessons/module-b4";
 import { moduleCLessons } from "./lessons/module-c";
 import { moduleDLessons } from "./lessons/module-d";
 import { moduleEFLessons } from "./lessons/module-ef";
@@ -22,9 +24,35 @@ import { writingTasks } from "./writing";
 import { speakingTasks } from "./speaking";
 import { quizzes } from "./quizzes";
 import { ieltsPractice, ieltsSpeaking, ieltsWritingTasks } from "./ielts";
+import { moduleBLessonsPart5 } from "./lessons/module-b5";
+import { moduleBLessonsPart6 } from "./lessons/module-b6";
+import { moduleBLessonsPart7 } from "./lessons/module-b7";
+import { moduleBLessonsPart8 } from "./lessons/module-b8";
+import { moduleCLessonsPart2 } from "./lessons/module-c2";
+import { moduleCLessonsPart3 } from "./lessons/module-c3";
+import { moduleCLessonsPart4 } from "./lessons/module-c4";
+import { moduleCLessonsPart5 } from "./lessons/module-c5";
+import { moduleCLessonsPart6 } from "./lessons/module-c6";
+import { moduleDLessonsPart2 } from "./lessons/module-d2";
+import { moduleDLessonsPart3 } from "./lessons/module-d3";
+import { moduleDLessonsPart4 } from "./lessons/module-d4";
+import { moduleEFLessonsPart2 } from "./lessons/module-e2";
+import { moduleEFLessonsPart3 } from "./lessons/module-e3";
+import { moduleEFLessonsPart4 } from "./lessons/module-ef2";
+import { moduleEFLessonsPart5 } from "./lessons/module-f2";
+import { moduleEFLessonsPart6 } from "./lessons/module-f3";
+import { moduleGLessonsPart2 } from "./lessons/module-g2";
+import { moduleGLessonsPart3 } from "./lessons/module-g3";
+import { moduleGLessonsPart4 } from "./lessons/module-g4";
+import { moduleHLessonsPart2 } from "./lessons/module-h2";
+import { moduleHLessonsPart3 } from "./lessons/module-h3";
+import { moduleHLessonsPart4 } from "./lessons/module-h4";
+import { moduleILessons } from "./lessons/module-i";
+import { moduleILessonsPart2 } from "./lessons/module-i2";
+import { moduleHLessonsPart5 } from "./lessons/module-h5";
 import { plannedLessons } from "./curriculum";
 
-export { moduleALessons, moduleALessonsPart2, moduleALessonsPart3, moduleALessonsPart4, moduleBLessonsPart1, moduleBLessonsPart2, moduleCLessons, moduleDLessons, moduleEFLessons, moduleGLessons, moduleHLessons, readingPassages, listeningScripts, writingTasks, speakingTasks, quizzes, ieltsPractice, ieltsWritingTasks, ieltsSpeaking, plannedLessons };
+export { moduleALessons, moduleALessonsPart2, moduleALessonsPart3, moduleALessonsPart4, moduleBLessonsPart1, moduleBLessonsPart2, moduleBLessonsPart3, moduleBLessonsPart4, moduleCLessons, moduleDLessons, moduleEFLessons, moduleGLessons, moduleHLessons, readingPassages, listeningScripts, writingTasks, speakingTasks, quizzes, ieltsPractice, ieltsWritingTasks, ieltsSpeaking, plannedLessons, moduleBLessonsPart5, moduleBLessonsPart6, moduleBLessonsPart7, moduleBLessonsPart8, moduleCLessonsPart2, moduleCLessonsPart3, moduleCLessonsPart4, moduleCLessonsPart5, moduleCLessonsPart6, moduleDLessonsPart2, moduleDLessonsPart3, moduleDLessonsPart4, moduleEFLessonsPart2, moduleEFLessonsPart3, moduleEFLessonsPart4, moduleEFLessonsPart5, moduleEFLessonsPart6, moduleGLessonsPart2, moduleGLessonsPart3, moduleGLessonsPart4, moduleHLessonsPart2, moduleHLessonsPart3, moduleHLessonsPart4, moduleILessons, moduleILessonsPart2, moduleHLessonsPart5 };
 
 const LEVEL_ORDER: Record<CEFR, number> = { A1: 0, A2: 1, B1: 2, B2: 3, C1: 4, C2: 5 };
 
@@ -35,11 +63,39 @@ export const allLessons: Lesson[] = [
   ...moduleALessonsPart4,
   ...moduleBLessonsPart1,
   ...moduleBLessonsPart2,
+  ...moduleBLessonsPart3,
+  ...moduleBLessonsPart4,
   ...moduleCLessons,
   ...moduleDLessons,
   ...moduleEFLessons,
   ...moduleGLessons,
   ...moduleHLessons,
+  ...moduleBLessonsPart5,
+  ...moduleBLessonsPart6,
+  ...moduleBLessonsPart7,
+  ...moduleBLessonsPart8,
+  ...moduleCLessonsPart2,
+  ...moduleCLessonsPart3,
+  ...moduleCLessonsPart4,
+  ...moduleCLessonsPart5,
+  ...moduleCLessonsPart6,
+  ...moduleDLessonsPart2,
+  ...moduleDLessonsPart3,
+  ...moduleDLessonsPart4,
+  ...moduleEFLessonsPart2,
+  ...moduleEFLessonsPart3,
+  ...moduleEFLessonsPart4,
+  ...moduleEFLessonsPart5,
+  ...moduleEFLessonsPart6,
+  ...moduleGLessonsPart2,
+  ...moduleGLessonsPart3,
+  ...moduleGLessonsPart4,
+  ...moduleHLessonsPart2,
+  ...moduleHLessonsPart3,
+  ...moduleHLessonsPart4,
+  ...moduleILessons,
+  ...moduleILessonsPart2,
+  ...moduleHLessonsPart5,
 ].sort((a, b) => {
   const mod = a.moduleId.localeCompare(b.moduleId);
   return mod !== 0 ? mod : LEVEL_ORDER[a.level] - LEVEL_ORDER[b.level];

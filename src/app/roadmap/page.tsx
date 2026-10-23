@@ -21,7 +21,11 @@ export default function RoadmapPage() {
       <PageHeader
         title="သင်ရိုး လမ်းညွှန်"
         titleMm="Roadmap"
-        description="Module ကိုး ခုဖြင့် ဖွဲ့စည်းထားသည်။ ရေးသားပြီးသော သင်ခန်းစာများကို တိုက်ရိုက် ဖွင့်နိုင်သည်။ 'စီစဉ်ထားသည်' ဟု ပြထားသော သင်ခန်းစာများမှာ အကြမ်းဖျင်း သင်ရိုးသာဖြစ်ပြီး အကြောင်းအရာ မရေးသားရသေးပါ။"
+        description={
+          totalPlanned > 0
+            ? "Module ကိုးခုဖြင့် ဖွဲ့စည်းထားသည်။ ရေးသားပြီးသော သင်ခန်းစာများကို တိုက်ရိုက် ဖွင့်နိုင်သည်။ 'စီစဉ်ထားသည်' ဟု ပြထားသော သင်ခန်းစာများမှာ အကြမ်းဖျင်း သင်ရိုးသာဖြစ်ပြီး အကြောင်းအရာ မရေးသားရသေးပါ။"
+            : "Module ကိုးခုဖြင့် ဖွဲ့စည်းထားသည်။ စီစဉ်ထားသော သင်ခန်းစာအားလုံး အပြည့်အစုံ ရေးသားပြီးဖြစ်သဖြင့် အားလုံးကို တိုက်ရိုက် ဖွင့်နိုင်သည်။"
+        }
         actions={
           <Badge tone="brand">
             ရေးသားပြီး {totalAuthored} · စီစဉ်ထားသည် {totalPlanned}
@@ -101,9 +105,11 @@ export default function RoadmapPage() {
                 </div>
                 <div className="text-right">
                   <Badge tone="green">ရေးသားပြီး {authored.length}</Badge>
-                  <Badge tone="slate" className="ml-1">
-                    စီစဉ်ထားသည် {planned.length}
-                  </Badge>
+                  {planned.length > 0 ? (
+                    <Badge tone="slate" className="ml-1">
+                      စီစဉ်ထားသည် {planned.length}
+                    </Badge>
+                  ) : null}
                   <p className="mm mt-1 text-xs text-ink-500 dark:text-ink-400">ပြီးစီး {completed}/{authored.length}</p>
                 </div>
               </div>

@@ -113,8 +113,8 @@ export const MODULES: {
   { id: "E", title: "Listening", titleMm: "နားထောင်မှု", description: "မူရင်း script များ၊ အဓိကအချက် နှင့် မှတ်စု ရေးနည်း", color: "amber" },
   { id: "F", title: "Reading", titleMm: "ဖတ်ရှုမှု", description: "ဖတ်နည်း၊ inference၊ tone နှင့် သတင်းအချက်အလက် ဖော်ထုတ်မှု", color: "teal" },
   { id: "G", title: "Writing", titleMm: "စာရေးသားမှု", description: "စာပိုဒ်၊ စာစီစာကုံး၊ အီးမေးလ်၊ report နှင့် rubric", color: "fuchsia" },
-  { id: "H", title: "Intermediate to Advanced", titleMm: "အလယ်မှ အဆင့်မြင့်သို့", description: "Complex sentence၊ register၊ academic writing၊ ခက်ခဲသော စကားလုံးများ", color: "violet" },
-  { id: "I", title: "Proficiency Assessment", titleMm: "ကျွမ်းကျင်မှု အကဲဖြတ်", description: "CEFR အဆင့်သတ်မှတ်ချက်၊ placement test နှင့် IELTS လေ့ကျင့်ခန်း", color: "slate" },
+  { id: "H", title: "Intermediate to Advanced", titleMm: "အလယ်မှ အဆင့်မြင့်သို့", description: "Complex sentence၊ register၊ academic writing၊ rhetoric နှင့် C2 စတိုင်", color: "violet" },
+  { id: "I", title: "Proficiency Assessment", titleMm: "ကျွမ်းကျင်မှု အကဲဖြတ်", description: "CEFR အကဲဖြတ်မှု၊ IELTS၊ လေ့လာမှု ကျွမ်းကျင်မှု နှင့် စမ်းသပ် စာမေးပွဲ", color: "slate" },
 ];
 
 export function moduleTitle(id: ModuleId): string {

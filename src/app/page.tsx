@@ -181,7 +181,11 @@ export default function DashboardPage() {
             <h2 className="mm text-sm font-bold text-ink-900 dark:text-white">ပါဝင်သည့် အကြောင်းအရာ</h2>
             <ul className="mm mt-2 space-y-1 text-xs text-ink-600 dark:text-ink-300">
               <li>သင်ခန်းစာ — {contentCounts.lessons} ခု (အပြည့်အစုံ)</li>
-              <li>စီစဉ်ထားသော သင်ခန်းစာ — {contentCounts.planned} ခု (မရေးသားရသေး)</li>
+              <li>
+                {contentCounts.planned > 0
+                  ? `စီစဉ်ထားသော သင်ခန်းစာ — ${contentCounts.planned} ခု (မရေးသားရသေး)`
+                  : "စီစဉ်ထားသော သင်ခန်းစာ — အားလုံး ရေးသားပြီး"}
+              </li>
               <li>ဖတ်ရှုမှု စာပိုဒ် — {contentCounts.readingPassages}</li>
               <li>နားထောင်မှု script — {contentCounts.listeningScripts} (အသံဖိုင် မပါ)</li>
               <li>စာရေးသားမှု တာဝန် — {contentCounts.writingTasks}</li>
