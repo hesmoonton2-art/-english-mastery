@@ -89,4 +89,5 @@ jobs:
             git commit -m "build: Android APK $(date -u +%Y-%m-%dT%H:%MZ)"
           fi
           # Publish as a dedicated branch so the source branch history stays clean.
-          git push origin HEAD:refs/heads/apk-build
+          # The apk-build branch only holds build outputs, so it is safe to force-push.
+          git push --force origin HEAD:refs/heads/apk-build
