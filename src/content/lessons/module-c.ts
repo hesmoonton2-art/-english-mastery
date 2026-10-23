@@ -1,0 +1,500 @@
+import type { Lesson } from "@/lib/types";
+
+export const moduleCLessons: Lesson[] = [
+  {
+    id: "c1-family-relationships",
+    moduleId: "C",
+    title: "Family and Relationships",
+    titleMm: "မိသားစု နှင့် ဆက်ဆံရေး စကားလုံးများ",
+    level: "A1",
+    minutes: 20,
+    summaryLine: "မိသားစုဝင် အမည်များ၊ ဆက်ဆံရေး ဖော်ပြချက်များနှင့် လူတစ်ဦးအကြောင်း ပြောပုံကို လေ့လာမည်။",
+    objectives: [
+      "မိသားစုဝင် ၁၂ မျိုး၏ အင်္ဂလိပ်အမည်ကို သိရမည်။",
+      "ပိုင်ဆိုင်မှုနှင့် ဆက်ဆံရေး ဖော်ပြရာတွင် မှန်ကန်သော စကားလုံး သုံးနိုင်ရမည်။",
+      "မိမိမိသားစု အကြောင်း စကားလုံး ၆၀ ဖြင့် ဖော်ပြနိုင်ရမည်။",
+    ],
+    vocab: [
+      { en: "parents", mm: "မိဘနှစ်ပါး", pos: "noun", ipa: "/ˈpeə.rənts/", example: "My parents live in Monywa.", exampleMm: "ကျွန်တော့်မိဘတွေ မုံရွာမှာ နေတယ်။", collocations: ["both parents", "single parent"], topic: "family", level: "A1" },
+      { en: "sibling", mm: "မွေးချင်း (ညီ/အစ်ကို/နှမ)", pos: "noun", ipa: "/ˈsɪb.lɪŋ/", example: "I have two siblings.", exampleMm: "ကျွန်မမှာ မွေးချင်း နှစ်ယောက် ရှိတယ်။", collocations: ["older sibling", "younger sibling"], topic: "family", level: "A1" },
+      { en: "cousin", mm: "ဝမ်းကွဲ", pos: "noun", ipa: "/ˈkʌz.ən/", example: "My cousin studies in Bangkok.", exampleMm: "ကျွန်တော့်ဝမ်းကွဲက ဘန်ကောက်မှာ ကျောင်းတက်တယ်။", collocations: ["first cousin", "distant cousin"], topic: "family", level: "A1" },
+      { en: "spouse", mm: "အိမ်ထောင်ဖက် (တရားဝင်)", pos: "noun", ipa: "/spaʊs/", example: "Please write your spouse's name here.", exampleMm: "ဒီမှာ သင့်အိမ်ထောင်ဖက်ရဲ့ နာမည် ရေးပါ။", collocations: ["spouse's name", "legal spouse"], topic: "family", level: "A2" },
+      { en: "relative", mm: "အမျိုးအနွယ် / ဆွေမျိုး", pos: "noun", ipa: "/ˈrel.ə.tɪv/", example: "All our relatives came to the wedding.", exampleMm: "ကျွန်တော်တို့ ဆွေမျိုးအားလုံး မင်္ဂလာဆောင်ကို လာခဲ့တယ်။", collocations: ["close relative", "distant relative"], topic: "family", level: "A2" },
+      { en: "get on well with", mm: "နှင့် သဘောတူညီသည် / ရင်းနှီးသည်", pos: "phrase", ipa: "/ɡet ɒn wel wɪð/", example: "I get on well with my sister.", exampleMm: "ကျွန်မက ညီမနဲ့ အဆင်ပြေတယ်။", collocations: ["get on well with someone"], topic: "relationships", level: "A2" },
+    ],
+    sections: [
+      {
+        heading: "၁။ မိသားစု အမည်များ",
+        body: [
+          "မိဘ — mother (mum), father (dad), parents။ မွေးချင်း — brother, sister, siblings (ကျား/မ မခွဲဘဲ မွေးချင်း)။",
+          "အခြား ဆွေမျိုးများ — grandmother, grandfather, aunt (အန်တီ/ဒေါ်ကြီး/ဒေါ်လေး), uncle (ဦးလေး/ဘကြီး), cousin, nephew (တူ — ယောကျ်ား), niece (တူမ), grandson, granddaughter။",
+          "အိမ်ထောင် — husband, wife, spouse, in-laws (mother-in-law, brother-in-law), stepfather, stepmother, half-brother။",
+        ],
+        table: {
+          headers: ["မြန်မာ", "English", "မှတ်ချက်"],
+          rows: [
+            ["ဝမ်းကွဲ", "cousin", "ကျား/မ မခွဲ"],
+            ["တူ/တူမ", "nephew / niece", "မွေးချင်းရဲ့ သား/သမီး"],
+            ["အိမ်ထောင်ဖက်", "husband / wife / spouse", "spouse = နှစ်မျိုးလုံး"],
+            ["ယောက်ဖ/မတော်တဆ", "brother-in-law / sister-in-law", "in-law = အိမ်ထောင်ရေးမှ ဆွေမျိုး"],
+          ],
+        },
+      },
+      {
+        heading: "၂။ ဆက်ဆံရေး ဖော်ပြချက်များ",
+        body: [
+          "get on well with = ရင်းနှီးသည်၊ အဆင်ပြေသည် — I get on well with my colleagues. (formal တွင် 'have a good relationship with' ကို သုံးနိုင်သည်)",
+          "fall out with = စကားများပြီး ကွဲသည် — She fell out with her best friend last year.",
+          "look after / take care of = စောင့်ရှောက်သည် — He looks after his elderly parents.",
+          "close family = ရင်းနှီးသော မိသားစု၊ extended family = မိသားစု အကြီးအကျယ် (အဘိုး၊ အဘွား၊ ဦးလေး စသည် ပါဝင်)။",
+        ],
+      },
+      {
+        heading: "၃။ မိသားစု အကြောင်း ရေးပုံ",
+        body: [
+          "အရေအတွက် — I have two brothers and one sister. / There are five people in my family.",
+          "အသက်အရွယ် — My brother is older than me. He is twenty-six. 'elder' ကို မိသားစုဝင်များအတွက် သုံးနိုင်သည် (my elder sister)။",
+          "နေထိုင်ရာ/အလုပ် — My parents live in Sagaing. My father works as a farmer.",
+          "ပြောဆိုရာတွင် ပိုင်ဆိုင်မှု နာမဝိသေသန (my, his, her, their) ကို မှန်ကန်စွာ သုံးပါ — My sister and her husband live in Yangon.",
+        ],
+      },
+    ],
+    examples: [
+      { en: "There are six people in my family: my parents, my two sisters, my brother and me.", mm: "ကျွန်တော့်မိသားစုမှာ ခြောက်ယောက် ရှိတယ် — မိဘ၊ ညီမ နှစ်ယောက်၊ အစ်ကိုနဲ့ ကျွန်တော်။" },
+      { en: "My aunt is a nurse and she works at a public hospital.", mm: "ကျွန်မအန်တီက သူနာပြု ဖြစ်ပြီး အစိုးရဆေးရုံမှာ အလုပ်လုပ်တယ်။" },
+      { en: "We are a close family and we meet every Sunday.", mm: "ကျွန်တော်တို့က ရင်းနှီးတဲ့ မိသားစု ဖြစ်ပြီး တနင်္ဂနွေတိုင်း တွေ့ဆုံတယ်။" },
+      { en: "My cousin's wedding will be in December.", mm: "ကျွန်တော့်ဝမ်းကွဲရဲ့ မင်္ဂလာပွဲက ဒီဇင်ဘာလမှာ ဖြစ်မယ်။", note: "cousin's = ပိုင်ဆိုင်မှု ('s)။" },
+      { en: "She gets on well with her mother-in-law.", mm: "သူမက ယောက္ခမနဲ့ အဆင်ပြေတယ်။" },
+    ],
+    mistakes: [
+      { wrong: "I have two cousin brothers.", right: "I have two cousins. / I have two male cousins.", why: "cousin သည် ကျား/မ မခွဲဘဲ တစ်လုံးတည်း သုံးသည်။ ဗဟုဝုဏ်းသည် cousins ဖြစ်သည်။" },
+      { wrong: "He is my uncle's son, so he is my nephew.", right: "He is my cousin.", why: "ဦးလေး၏ သားသည် cousin (ဝမ်းကွဲ) ဖြစ်သည်။ nephew သည် မွေးချင်း၏ သား ဖြစ်သည်။" },
+      { wrong: "My parents are live in Yangon.", right: "My parents live in Yangon.", why: "ကြိယာ 'live' ကို be verb နှင့် မတွဲပါ။ 'are living' ဟု ယာယီအတွက် သုံးနိုင်သည်။" },
+    ],
+    guided: [
+      { id: "c1-g1", type: "mcq", prompt: "Your mother's brother is your ___.", promptMm: "အမေရဲ့ ညီ/အစ်ကိုက သင့်အတွက် ဘယ်သူလဲ။", options: ["uncle", "cousin", "nephew", "brother-in-law"], answer: 0, explanation: "မိဘ၏ မောင်နှမများကို uncle (ဦး/ဘ)၊ aunt (ဒေါ်) ဟု ခေါ်သည်။", topic: "family", level: "A1" },
+      { id: "c1-g2", type: "fill", prompt: "My sister's son is my ___.", promptMm: "ညီမ/အစ်မရဲ့ သားက ဘယ်သူလဲ။", answers: ["nephew"], explanation: "မွေးချင်း၏ သားကို nephew ဟု ခေါ်သည်။", topic: "family", level: "A1" },
+      { id: "c1-g3", type: "mcq", prompt: "Choose the correct phrase: I ___ my colleagues.", promptMm: "'အဆင်ပြေသည်' ဟု အဓိပ္ပာယ်ရသည့် စကားစုကို ရွေးပါ။", options: ["get on well with", "get well with", "go on well with", "get on good with"], answer: 0, explanation: "get on well with = ရင်းနှီးသည်၊ အဆင်ပြေသည်။", topic: "relationships", level: "A2" },
+      { id: "c1-g4", type: "correct", prompt: "Correct: There are five people in my family: my parent, two sisters, my brother and me.", promptMm: "ဝါကျကို ပြင်ပါ။", answers: ["There are five people in my family: my parents, two sisters, my brother and me.", "There are five people in my family: my parents, two sisters, my brother and I."], explanation: "မိဘ နှစ်ဦး ဖြစ်သောကြောင့် parents (ဗဟုဝုဏ်း) ဖြစ်သည်။", topic: "family", level: "A1" },
+    ],
+    independent: [
+      { id: "c1-i1", type: "fill", prompt: "My mother's sister is my ___.", promptMm: "အမေရဲ့ နှမက ဘယ်သူလဲ။", answers: ["aunt"], explanation: "မိဘ၏ နှမကို aunt ဟု ခေါ်သည်။", topic: "family", level: "A1" },
+      { id: "c1-i2", type: "translate", prompt: "Translate: ကျွန်တော့်မိသားစုမှာ လေးယောက် ရှိတယ်။ မိဘနှစ်ယောက်၊ အစ်မတစ်ယောက်နဲ့ ကျွန်တော်ပါ။", promptMm: "မြန်မာစကားကို အင်္ဂလိပ်လို ပြန်ဆိုပါ။", answers: ["There are four people in my family: my parents, my sister and me.", "There are four people in my family: my parents, my older sister and me.", "My family has four people: my parents, my sister and me."], explanation: "အရေအတွက်ကို There are ... ဖြင့် ဖော်ပြသည်။", topic: "family", level: "A1" },
+      { id: "c1-i3", type: "mcq", prompt: "Which word means 'your husband's mother'?", promptMm: "ခင်ပွန်းရဲ့ အမေကို ဘယ်လို ခေါ်သနည်း။", options: ["stepmother", "mother-in-law", "grandmother", "aunt"], answer: 1, explanation: "အိမ်ထောင်ရေးမှ ဆွေမျိုးများကို -in-law ဖြင့် ခေါ်သည်။", topic: "family", level: "A2" },
+      { id: "c1-i4", type: "order", prompt: "Arrange the sentence.", promptMm: "ဝါကျ ဖြစ်အောင် စီပါ။", tokens: ["She", "looks", "after", "her", "elderly", "parents"], answers: ["She looks after her elderly parents"], explanation: "look after = စောင့်ရှောက်သည်။ elderly = သက်ကြီးရွယ်အို။", topic: "relationships", level: "A2" },
+    ],
+    review: [
+      { q: "cousin နှင့် nephew ကွာခြားချက်က ဘာနည်း။", a: "cousin = ဝမ်းကွဲ။ nephew = မွေးချင်း၏ သား။" },
+      { q: "get on well with ၏ အဓိပ္ပာယ်က ဘာနည်း။", a: "တစ်ဦးနှင့် ရင်းနှီးစွာ ဆက်ဆံသည် / အဆင်ပြေသည်။" },
+      { q: "အိမ်ထောင်ဖက်ကို တရားဝင် စာတွင် ဘယ်လို ခေါ်သနည်း။", a: "spouse။" },
+    ],
+    summary: [
+      "မိသားစု အမည်များကို ကျား/မ နှင့် ဆက်ဆံရေး အလိုက် ခွဲခြားမှတ်ရသည်။",
+      "get on well with, look after စသည့် စကားစုများသည် ဆက်ဆံရေး ဖော်ပြရာတွင် အသုံးများသည်။",
+      "မိသားစု အကြောင်း ရေးရာတွင် အရေအတွက်၊ အသက်၊ နေရာ၊ အလုပ် အစဉ်လိုက် ဖော်ပြနိုင်သည်။",
+    ],
+    mastery: [
+      "မိသားစုဝင် ၁၀ မျိုးကို မှန်ကန်စွာ ခေါ်နိုင်သည်။",
+      "မိမိမိသားစု အကြောင်း စကားလုံး ၆၀ ဖြင့် ရေးနိုင်သည်။",
+      "လေ့ကျင့်ခန်း ၈၀% အထက် ရရှိသည်။",
+    ],
+    topics: ["family", "relationships"],
+  },
+  {
+    id: "c2-food-cooking",
+    moduleId: "C",
+    title: "Food, Cooking and Eating Out",
+    titleMm: "အစားအစာ၊ ချက်ပြုတ်ခြင်း နှင့် အပြင်ထွက် စားခြင်း",
+    level: "A1",
+    minutes: 22,
+    summaryLine: "အစားအစာ၊ အရသာ၊ ချက်ပြုတ်နည်းနှင့် စားသောက်ဆိုင်တွင် မှာယူပုံ စကားလုံးများကို လေ့လာမည်။",
+    objectives: [
+      "အစားအစာ စကားလုံး ၁၅ လုံးကို သိရမည်။",
+      "ရေတွက်နိုင်/မရ နာမ်ကို အစားအစာ နမူနာဖြင့် ခွဲခြားနိုင်ရမည်။",
+      "စားသောက်ဆိုင်တွင် ယဉ်ကျေးစွာ မှာယူနိုင်ရမည်။",
+    ],
+    vocab: [
+      { en: "spicy", mm: "အရသာပူသော (ငရုတ်သီး)", pos: "adjective", ipa: "/ˈspaɪ.si/", example: "This curry is too spicy for me.", exampleMm: "ဒီဟင်းက ကျွန်တော့်အတွက် အရမ်းပူတယ်။", collocations: ["spicy food", "very spicy"], topic: "food", level: "A1" },
+      { en: "boil", mm: "ဆူအောင် ပြုတ်သည်", pos: "verb", ipa: "/bɔɪl/", example: "Boil the rice for twenty minutes.", exampleMm: "ထမင်းကို မိနစ် နှစ်ဆယ် ပြုတ်ပါ။", collocations: ["boil water", "boiled egg"], topic: "cooking", level: "A1" },
+      { en: "fry", mm: "ကြော်သည်", pos: "verb", ipa: "/fraɪ/", example: "Fry the onions until golden.", exampleMm: "ကြက်သွန်နီကို ရွှေရောင်ဖြစ်သည်အထိ ကြော်ပါ။", collocations: ["stir-fry", "deep-fry"], topic: "cooking", level: "A1" },
+      { en: "ingredient", mm: "ပါဝင်ပစ္စည်း", pos: "noun", ipa: "/ɪnˈɡriː.di.ənt/", example: "What ingredients do we need?", exampleMm: "ဘယ်ပါဝင်ပစ္စည်းတွေ လိုအပ်လဲ။", collocations: ["fresh ingredients", "main ingredient"], topic: "cooking", level: "A2" },
+      { en: "bill", mm: "ငွေတောင်းခံလွှာ/ကျသင့်ငွေ", pos: "noun", ipa: "/bɪl/", example: "Could we have the bill, please?", exampleMm: "ကျသင့်ငွေ ယူလာပေးနိုင်မလား။", collocations: ["pay the bill", "split the bill"], topic: "eating out", level: "A2" },
+      { en: "vegetarian", mm: "အသီးအရွက် သာ စားသူ", pos: "noun", ipa: "/ˌvedʒ.əˈteə.ri.ən/", example: "I am a vegetarian, so I don't eat meat.", exampleMm: "ကျွန်မက အသီးအရွက်သာ စားသူ ဖြစ်လို့ အသား မစားပါ။", collocations: ["vegetarian dish", "strict vegetarian"], topic: "food", level: "A2" },
+    ],
+    sections: [
+      {
+        heading: "၁။ အစားအစာ ဝေါဟာရ",
+        body: [
+          "အခြေခံ ပစ္စည်းများ — rice, noodles, bread, egg, chicken, beef, pork, fish, vegetables, fruit, oil, salt, sugar, garlic, onion, chilli။",
+          "အရသာ — sweet (ချို), sour (ချဉ်), salty (ငန်), spicy (ပူ), bitter (ခါး), delicious (အရသာရှိ), bland (အရသာမရှိ)။",
+          "ချက်ပြုတ်နည်း ကြိယာများ — boil, fry, grill, bake, steam, roast, chop, mix, stir, add, serve။",
+          "ရေတွက်နိုင်သော — an egg, two apples, three onions။ ရေတွက်မရသော — rice, water, salt, sugar, oil, bread (အလုံးအလိုက် ရေတွက်လျှင် a loaf of bread)။",
+        ],
+        table: {
+          headers: ["ကြိယာ", "မြန်မာ", "ဥပမာ"],
+          rows: [
+            ["boil", "ပြုတ်", "Boil the eggs."],
+            ["fry", "ကြော်", "Fry the chicken."],
+            ["grill", "မီးကင်", "Grill the fish."],
+            ["steam", "အပူငွေ့ဖြင့် ချက်", "Steam the vegetables."],
+            ["chop", "လှီး", "Chop the onions."],
+          ],
+        },
+      },
+      {
+        heading: "၂။ စားသောက်ဆိုင်တွင်",
+        body: [
+          "စားပွဲ မေးရန် — A table for two, please. Do you have a table for three?",
+          "မှာယူရန် — I'd like the chicken curry, please. Could I have a glass of water? I'll have the same.",
+          "မေးရန် — What do you recommend? Is this dish spicy? Does it contain nuts?",
+          "ငွေရှင်းရန် — Could we have the bill, please? Can I pay by card? Keep the change.",
+        ],
+      },
+      {
+        heading: "၃။ ချက်ပြုတ်နည်း ဖတ်ပုံ",
+        body: [
+          "ချက်ပြုတ်နည်းများတွင် အမိန့်ပုံစံ (imperative) ကို သုံးသည် — Heat the oil. Add the garlic. Stir for two minutes.",
+          "ပမာဏ — a teaspoon of salt, two tablespoons of oil, 200 grams of rice, a pinch of pepper။",
+          "အစီအစဉ် — First, ... Next, ... Then, ... After that, ... Finally, ... ဤစကားလုံးများသည် အဆင့်များကို ရှင်းလင်းစေသည်။",
+        ],
+      },
+    ],
+    examples: [
+      { en: "I usually have rice and curry for lunch.", mm: "ကျွန်တော် နေ့လယ်စာအဖြစ် ထမင်းနဲ့ ဟင်း များသောအားဖြင့် စားတယ်။" },
+      { en: "She is vegetarian, so she ordered a vegetable salad.", mm: "သူမက အသီးအရွက်သာ စားသူ ဖြစ်လို့ အသီးအရွက် သုပ်ကို မှာခဲ့တယ်။" },
+      { en: "First, boil the noodles. Then fry the vegetables.", mm: "ပထမဆုံး ခေါက်ဆွဲကို ပြုတ်ပါ။ ပြီးရင် အသီးအရွက်ကို ကြော်ပါ။" },
+      { en: "Could we have the bill, please?", mm: "ကျသင့်ငွေ ယူလာပေးနိုင်မလား။" },
+      { en: "This soup is delicious but a little salty.", mm: "ဒီဟင်းရည်က အရသာရှိတယ် ဒါပေမယ့် ငန်နည်းနည်း များတယ်။" },
+    ],
+    mistakes: [
+      { wrong: "I need some rices.", right: "I need some rice.", why: "rice သည် ရေတွက်မရသောကြောင့် -s မထည့်ပါ။" },
+      { wrong: "Can I have a water?", right: "Can I have a glass of water? / some water", why: "water သည် ရေတွက်မရသောကြောင့် ယူနစ် (a glass of, a bottle of) ဖြင့် ရေတွက်သည်။" },
+      { wrong: "I want the chicken curry, please.", right: "I'd like the chicken curry, please.", why: "စားသောက်ဆိုင်တွင် 'I want' သည် ရိုင်းသည်ဟု ခံစားရနိုင်သည်။ 'I'd like' က ယဉ်ကျေးသည်။" },
+    ],
+    guided: [
+      { id: "c2-g1", type: "mcq", prompt: "Which word means 'ငန်သော'?", promptMm: "အရသာ စကားလုံး ရွေးပါ။", options: ["salty", "spicy", "sour", "sweet"], answer: 0, explanation: "salty = ငန်။ spicy = ပူ။ sour = ချဉ်။ sweet = ချို။", topic: "food", level: "A1" },
+      { id: "c2-g2", type: "fill", prompt: "First, ___ the onions in oil for three minutes.", promptMm: "ကြော်သည်ဟု အဓိပ္ပာယ်ရသည့် ကြိယာ ဖြည့်ပါ။", answers: ["fry", "stir-fry"], explanation: "fry = ကြော်သည်။", topic: "cooking", level: "A1" },
+      { id: "c2-g3", type: "mcq", prompt: "At a restaurant, which is most polite?", promptMm: "အင်မတန် ယဉ်ကျေးသည့် စကားကို ရွေးပါ။", options: ["Give me the bill.", "Could we have the bill, please?", "I want the bill now.", "Bill!"], answer: 1, explanation: "Could we ... , please? သည် ယဉ်ကျေးသော ပုံစံ ဖြစ်သည်။", topic: "eating out", level: "A2" },
+      { id: "c2-g4", type: "correct", prompt: "Correct: I need two breads for breakfast.", promptMm: "ဝါကျကို ပြင်ပါ။", answers: ["I need two loaves of bread for breakfast.", "I need two slices of bread for breakfast.", "I need some bread for breakfast."], explanation: "bread သည် ရေတွက်မရသောကြောင့် loaves/slices စသည့် ယူနစ်ဖြင့် ရေတွက်သည်။", topic: "food", level: "A1" },
+    ],
+    independent: [
+      { id: "c2-i1", type: "fill", prompt: "What ___ do we need for this curry? (ပါဝင်ပစ္စည်း)", promptMm: "ပါဝင်ပစ္စည်းဟု အဓိပ္ပာယ်ရသည့် စကားလုံး ဖြည့်ပါ။", answers: ["ingredients"], explanation: "ingredients = ပါဝင်ပစ္စည်းများ။", topic: "cooking", level: "A2" },
+      { id: "c2-i2", type: "translate", prompt: "Translate: ဒီဟင်းက အရမ်းပူတယ်။ ရေတစ်ခွက် ယူလာပေးနိုင်မလား။", promptMm: "မြန်မာစကားကို အင်္ဂလိပ်လို ပြန်ဆိုပါ။", answers: ["This dish is very spicy. Could I have a glass of water?", "This dish is too spicy. Could I have a glass of water?", "This curry is very spicy. Can I have a glass of water?"], explanation: "spicy = ပူ။ a glass of water = ရေတစ်ခွက်။", topic: "food", level: "A1" },
+      { id: "c2-i3", type: "mcq", prompt: "Which is uncountable?", promptMm: "ရေတွက်မရသော နာမ်ကို ရွေးပါ။", options: ["apple", "egg", "sugar", "onion"], answer: 2, explanation: "sugar သည် ရေတွက်မရသော နာမ် ဖြစ်သည်။", topic: "food", level: "A1" },
+      { id: "c2-i4", type: "order", prompt: "Arrange the cooking instruction.", promptMm: "ချက်ပြုတ်နည်း အဆင့် ဖြစ်အောင် စီပါ။", tokens: ["Then", "add", "the", "salt", "and", "stir", "well"], answers: ["Then add the salt and stir well"], explanation: "Then + imperative + object — အဆင့်ဆက် ညွှန်ကြားချက်။", topic: "cooking", level: "A2" },
+    ],
+    review: [
+      { q: "food နှင့် သက်ဆိုင်သော ရေတွက်မရ နာမ် ၃ လုံး ပြောပါ။", a: "rice, sugar, water (ထို့အပြင် salt, oil, bread)။" },
+      { q: "ချက်ပြုတ်နည်းတွင် ဘယ်ကြိယာပုံစံ သုံးသနည်း။", a: "imperative (အမိန့်ပုံစံ) — Boil, Fry, Add။" },
+      { q: "စားသောက်ဆိုင်တွင် ငွေရှင်းရန် ယဉ်ကျေးသော စကားက ဘာနည်း။", a: "Could we have the bill, please?" },
+    ],
+    summary: [
+      "အစားအစာ ဝေါဟာရတွင် ရေတွက်နိုင်/မရ ကွာခြားချက် အရေးကြီးသည်။",
+      "ချက်ပြုတ်နည်းများတွင် imperative နှင့် အဆင့်ဆက် စကားလုံးများ သုံးသည်။",
+      "စားသောက်ဆိုင်တွင် I'd like ..., Could I have ...? ကို သုံးသည်။",
+    ],
+    mastery: [
+      "အစားအစာ စကားလုံး ၂၀ ကို မှန်ကန်စွာ သုံးနိုင်သည်။",
+      "စားသောက်ဆိုင်တွင် မိမိကိုယ်တိုင် မှာယူနိုင်သည်။",
+      "လေ့ကျင့်ခန်း ၈၀% အထက် ရရှိသည်။",
+    ],
+    topics: ["food", "cooking", "countable and uncountable nouns"],
+  },
+  {
+    id: "c3-work-careers",
+    moduleId: "C",
+    title: "Work and Careers",
+    titleMm: "အလုပ်နှင့် အသက်မွေးဝမ်းကျောင်း",
+    level: "B1",
+    minutes: 24,
+    summaryLine: "အလုပ်အကိုင်၊ CV၊ အင်တာဗျူး နှင့် အလုပ်ခွင် ဆက်သွယ်ရေး စကားလုံးများကို လေ့လာမည်။",
+    objectives: [
+      "အလုပ်အကိုင် စကားလုံး ၁၂ လုံးကို အဓိပ္ပာယ်ဖြင့် သိရမည်။",
+      "အတွေ့အကြုံနှင့် တာဝန်များကို အင်္ဂလိပ်လို ဖော်ပြနိုင်ရမည်။",
+      "အလုပ်အင်တာဗျူးတွင် အသုံးဝင်သော စကားစုများကို သိရမည်။",
+    ],
+    vocab: [
+      { en: "apply for", mm: "လျှောက်ထားသည်", pos: "phrasal verb", ipa: "/əˈplaɪ fɔː/", example: "I applied for a job at a bank.", exampleMm: "ကျွန်တော် ဘဏ်တစ်ခုမှာ အလုပ်လျှောက်ခဲ့တယ်။", collocations: ["apply for a position", "apply online"], topic: "work", level: "B1" },
+      { en: "experience", mm: "အတွေ့အကြုံ", pos: "noun", ipa: "/ɪkˈspɪə.ri.əns/", example: "She has five years of experience in marketing.", exampleMm: "သူမမှာ စျေးကွက် အလုပ်အတွေ့အကြုံ ငါးနှစ် ရှိတယ်။", collocations: ["work experience", "gain experience"], topic: "work", level: "B1" },
+      { en: "deadline", mm: "နောက်ဆုံးသတ်မှတ်ရက်", pos: "noun", ipa: "/ˈded.laɪn/", example: "The deadline is Friday at noon.", exampleMm: "နောက်ဆုံးရက်က သောကြာနေ့ မွန်းတည့်ချိန် ဖြစ်တယ်။", collocations: ["miss a deadline", "meet a deadline"], topic: "work", level: "B1" },
+      { en: "promotion", mm: "ရာထူးတိုးမြှင့်ခြင်း", pos: "noun", ipa: "/prəˈməʊ.ʃən/", example: "He got a promotion last year.", exampleMm: "သူ မနှစ်က ရာထူးတိုးခဲ့တယ်။", collocations: ["get a promotion", "deserve a promotion"], topic: "work", level: "B1" },
+      { en: "colleague", mm: "လုပ်ဖော်ကိုင်ဖက်", pos: "noun", ipa: "/ˈkɒl.iːɡ/", example: "My colleagues are very supportive.", exampleMm: "ကျွန်တော့် လုပ်ဖော်ကိုင်ဖက်တွေ အရမ်း ကူညီတယ်။", collocations: ["close colleague", "former colleague"], topic: "work", level: "B1" },
+      { en: "responsibility", mm: "တာဝန်", pos: "noun", ipa: "/rɪˌspɒn.sɪˈbɪl.ə.ti/", example: "My main responsibility is customer support.", exampleMm: "ကျွန်တော့်ရဲ့ အဓိက တာဝန်က ဖောက်သည် ကူညီရေးပါ။", collocations: ["take responsibility", "main responsibility"], topic: "work", level: "B1" },
+    ],
+    sections: [
+      {
+        heading: "၁။ အလုပ်နှင့် ရာထူး ဝေါဟာရ",
+        body: [
+          "ရာထူးများ — manager, supervisor, assistant, accountant, engineer, nurse, teacher, technician, receptionist, accountant။",
+          "အလုပ်အမျိုးအစား — full-time, part-time, temporary, permanent, freelance, internship, shift work, remote work။",
+          "လုပ်ငန်းစဉ် — apply for a job, send a CV, attend an interview, be offered a position, sign a contract, get a promotion, resign, retire။",
+          "လစာ — salary (လစဉ် လစာ), wages (ရက်စား/နာရီစား), bonus, allowance, benefits။",
+        ],
+        table: {
+          headers: ["စကားလုံး", "အဓိပ္ပာယ်", "ဥပမာ"],
+          rows: [
+            ["CV / résumé", "ကိုယ်ရေးရာဇဝင်", "Send your CV by email."],
+            ["interview", "အင်တာဗျူး", "I have an interview on Monday."],
+            ["probation", "စမ်းသပ်ကာလ", "The probation period is three months."],
+            ["overtime", "အချိန်ပို", "He works overtime every Friday."],
+          ],
+        },
+      },
+      {
+        heading: "၂။ အတွေ့အကြုံ ဖော်ပြခြင်း",
+        body: [
+          "အတိတ် အတွေ့အကြုံအတွက် past simple၊ ဆက်လက်လုပ်နေဆဲအတွက် present perfect ကို သုံးသည် — I worked at a hotel for two years. I have worked here since 2022.",
+          "တာဝန်များကို ဖော်ပြရာတွင် 'responsible for + noun/verb-ing' — I was responsible for training new staff.",
+          "ကျွမ်းကျင်မှုကို ဖော်ပြရာတွင် 'I am good at + noun/verb-ing' နှင့် 'I can + base verb' — I am good at solving problems.",
+        ],
+      },
+      {
+        heading: "၃။ အင်တာဗျူး စကားစုများ",
+        body: [
+          "Tell me about yourself. — ကိုယ်ရေးအကျဉ်း၊ အတွေ့အကြုံ၊ ဤအလုပ်ကို ဘာလို့ လျှောက်သည် ကို စကားလုံး ၆၀–၉၀ ဖြင့် ဖြေပါ။",
+          "Why do you want this job? — 'I am interested in ... because ...' ဖြင့် ဖြေပါ။ ကုမ္ပဏီအကြောင်း ကြိုလေ့လာထားကြောင်း ပြပါ။",
+          "What are your strengths and weaknesses? — အားသာချက်ကို ဥပမာဖြင့်၊ အားနည်းချက်ကို တိုးတက်အောင် လုပ်နေသည့် အချက်ဖြင့် ဖြေပါ။",
+          "Do you have any questions for us? — အလုပ်တာဝန်၊ အဖွဲ့အစည်း ယဉ်ကျေးမှု စသည့် မေးခွန်း ၁–၂ ခု ပြင်ဆင်ထားပါ။",
+        ],
+      },
+    ],
+    examples: [
+      { en: "I have three years of experience in customer service.", mm: "ကျွန်မမှာ ဖောက်သည်ဝန်ဆောင်မှု အတွေ့အကြုံ သုံးနှစ် ရှိတယ်။" },
+      { en: "As a supervisor, I was responsible for a team of ten people.", mm: "ကြီးကြပ်ရေးမှူးအဖြစ် လူ ဆယ်ဦးအဖွဲ့ကို တာဝန်ယူခဲ့တယ်။" },
+      { en: "The deadline for applications is 30 November.", mm: "လျှောက်လွှာ တင်ရန် နောက်ဆုံးရက်က နိုဝင်ဘာ ၃၀ ရက် ဖြစ်တယ်။" },
+      { en: "She resigned from her job to start her own business.", mm: "သူမ ကိုယ်ပိုင်လုပ်ငန်း စတင်ရန် အလုပ်မှ ထွက်ခဲ့တယ်။" },
+      { en: "Could you send me the report by Friday, please?", mm: "သောကြာနေ့ နောက်ဆုံးထား အစီရင်ခံစာ ပို့ပေးနိုင်မလား။" },
+    ],
+    mistakes: [
+      { wrong: "I am working in this company since 2020.", right: "I have worked in this company since 2020.", why: "အတိတ်မှ ယခုအထိ ဆက်လက်ဖြစ်နေသောကြောင့် present perfect သုံးသည်။" },
+      { wrong: "I am responsible of the marketing team.", right: "I am responsible for the marketing team.", why: "responsible နှင့် တွဲသော ဝိဘတ်မှာ for ဖြစ်သည်။" },
+      { wrong: "He has a good career and much money.", right: "He has a good career and a lot of money.", why: "အပြုဝါကျတွင် much ထက် a lot of က ပိုသဘာဝကျသည်။" },
+    ],
+    guided: [
+      { id: "c3-g1", type: "mcq", prompt: "You want a job. You ___ for it.", promptMm: "သင့်လျော်သော ကြိယာ ရွေးပါ။", options: ["apply", "appoint", "employ", "interview"], answer: 0, explanation: "apply for a job = အလုပ်လျှောက်သည်။", topic: "work", level: "B1" },
+      { id: "c3-g2", type: "fill", prompt: "We must meet the ___ by Friday.", promptMm: "နောက်ဆုံးရက်ကို ဖြည့်ပါ။", answers: ["deadline"], explanation: "deadline = နောက်ဆုံးသတ်မှတ်ရက်။", topic: "work", level: "B1" },
+      { id: "c3-g3", type: "mcq", prompt: "Which is correct?", promptMm: "မှန်ကန်သော ဝါကျကို ရွေးပါ။", options: ["I am responsible for sales.", "I am responsible of sales.", "I responsible for sales.", "I am responsible to sales."], answer: 0, explanation: "responsible for + noun ပုံစံ ဖြစ်သည်။", topic: "work", level: "B1" },
+      { id: "c3-g4", type: "correct", prompt: "Correct: She have worked here for three years.", promptMm: "ဝါကျကို ပြင်ပါ။", answers: ["She has worked here for three years.", "She has worked here for three years"], explanation: "she + has + V3 (worked)။", topic: "work", level: "B1" },
+    ],
+    independent: [
+      { id: "c3-i1", type: "fill", prompt: "He got a ___ and now he is a manager.", promptMm: "ရာထူးတိုးခြင်းဟု အဓိပ္ပာယ်ရသည့် စကားလုံး ဖြည့်ပါ။", answers: ["promotion"], explanation: "promotion = ရာထူးတိုးမြှင့်ခြင်း။", topic: "work", level: "B1" },
+      { id: "c3-i2", type: "translate", prompt: "Translate: ကျွန်တော် ဒီကုမ္ပဏီမှာ နှစ်နှစ်ကြာ အလုပ်လုပ်ခဲ့ပြီး အဖွဲ့တစ်ဖွဲ့ကို ကြီးကြပ်ခဲ့တယ်။", promptMm: "မြန်မာစကားကို အင်္ဂလိပ်လို ပြန်ဆိုပါ။", answers: ["I have worked at this company for two years and I have supervised a team.", "I have worked in this company for two years and supervised a team.", "I've worked at this company for two years and supervised a team."], explanation: "for + ကာလ နှင့် present perfect ကို တွဲသုံးသည်။", topic: "work", level: "B1" },
+      { id: "c3-i3", type: "mcq", prompt: "In an interview, 'Tell me about yourself' means:", promptMm: "အင်တာဗျူးတွင် ထိုမေးခွန်း၏ ရည်ရွယ်ချက်က ဘာနည်း။", options: ["Tell your life story in detail.", "Give a short summary of your experience and skills.", "Talk about your family.", "Ask about the salary."], answer: 1, explanation: "အတွေ့အကြုံနှင့် ကျွမ်းကျင်မှုကို အနှစ်ချုပ် ဖြေရမည်။ အသေးစိတ် ဘဝဖြစ်စဉ် မဟုတ်ပါ။", topic: "work", level: "B1" },
+      { id: "c3-i4", type: "order", prompt: "Arrange the sentence.", promptMm: "ဝါကျ ဖြစ်အောင် စီပါ။", tokens: ["My", "main", "responsibility", "is", "training", "new", "staff"], answers: ["My main responsibility is training new staff"], explanation: "responsibility is + noun/verb-ing ပုံစံ။", topic: "work", level: "B1" },
+    ],
+    review: [
+      { q: "apply for နှင့် responsible for တွဲသုံးပုံ ရေးပါ။", a: "I applied for a job. I am responsible for sales။" },
+      { q: "အတိတ်မှ ယခုအထိ အလုပ်လုပ်နေဆဲကို ဘယ်လို ပြောသနည်း။", a: "I have worked here for/since ...။" },
+      { q: "full-time နှင့် part-time ကွာခြားချက်က ဘာနည်း။", a: "full-time = အချိန်ပြည့်၊ part-time = အချိန်ပိုင်း။" },
+    ],
+    summary: [
+      "အလုပ်နှင့် သက်ဆိုင်သော ဝေါဟာရသည် ရာထူး၊ အလုပ်အမျိုးအစားနှင့် လုပ်ငန်းစဉ် အလိုက် ကွဲပြားသည်။",
+      "အတွေ့အကြုံကို present perfect/past simple ဖြင့် တိကျစွာ ဖော်ပြသည်။",
+      "အင်တာဗျူးတွင် တိုတိုရှင်းရှင်း၊ ဥပမာဖြင့် ဖြေသည်။",
+    ],
+    mastery: [
+      "အလုပ်အကိုင် စကားလုံး ၁၂ လုံးကို ဝါကျထဲ သုံးနိုင်သည်။",
+      "မိမိအတွေ့အကြုံကို စကားလုံး ၈၀ ဖြင့် ဖော်ပြနိုင်သည်။",
+      "လေ့ကျင့်ခန်း ၈၀% အထက် ရရှိသည်။",
+    ],
+    topics: ["work", "present perfect", "formal communication"],
+  },
+  {
+    id: "c4-technology",
+    moduleId: "C",
+    title: "Technology and Digital Life",
+    titleMm: "နည်းပညာ နှင့် ဒစ်ဂျစ်တယ် ဘဝ",
+    level: "B1",
+    minutes: 22,
+    summaryLine: "နည်းပညာ စကားလုံးများ၊ အွန်လိုင်း လုံခြုံရေး နှင့် နည်းပညာ အကြောင်း ထင်မြင်ချက် ဖော်ပြပုံကို လေ့လာမည်။",
+    objectives: [
+      "နည်းပညာ ဝေါဟာရ ၁၂ လုံးကို သိရမည်။",
+      "နည်းပညာ၏ ကောင်းကျိုး/ဆိုးကျိုးကို နှိုင်းယှဉ်ပြောနိုင်ရမည်။",
+      "အွန်လိုင်း လုံခြုံရေး အကြံပြုချက်များကို နားလည်ရမည်။",
+    ],
+    vocab: [
+      { en: "device", mm: "စက်ပစ္စည်း", pos: "noun", ipa: "/dɪˈvaɪs/", example: "This device connects to the internet.", exampleMm: "ဒီစက်ပစ္စည်းက အင်တာနက်နဲ့ ချိတ်ဆက်တယ်။", collocations: ["mobile device", "electronic device"], topic: "technology", level: "B1" },
+      { en: "download", mm: "ဒေါင်းလုဒ် ဆွဲသည် (ကိုယ့်စက်ထဲ သိမ်း)", pos: "verb", ipa: "/ˌdaʊnˈləʊd/", example: "I downloaded the app last night.", exampleMm: "မနေ့ညက အက်ပ်ကို ဒေါင်းလုဒ် ဆွဲခဲ့တယ်။", collocations: ["download a file", "free download"], topic: "technology", level: "B1" },
+      { en: "password", mm: "စကားဝှက်", pos: "noun", ipa: "/ˈpɑːs.wɜːd/", example: "Use a strong password for each account.", exampleMm: "အကောင့်တိုင်းအတွက် ခိုင်မာတဲ့ စကားဝှက် သုံးပါ။", collocations: ["strong password", "forget your password"], topic: "technology", level: "B1" },
+      { en: "privacy", mm: "ကိုယ်ရေးကိုယ်တာ လုံခြုံမှု", pos: "noun", ipa: "/ˈprɪv.ə.si/", example: "Online privacy is important to many users.", exampleMm: "အွန်လိုင်း ကိုယ်ရေးလုံခြုံမှုက အသုံးပြုသူများစွာအတွက် အရေးကြီးတယ်။", collocations: ["protect privacy", "privacy settings"], topic: "technology", level: "B1" },
+      { en: "reliable", mm: "ယုံကြည်စိတ်ချရသော", pos: "adjective", ipa: "/rɪˈlaɪ.ə.bəl/", example: "The internet connection is not very reliable here.", exampleMm: "ဒီမှာ အင်တာနက် ချိတ်ဆက်မှုက အရမ်း မယုံကြည်ရဘူး။", collocations: ["reliable source", "reliable service"], topic: "technology", level: "B1" },
+      { en: "screen time", mm: "မျက်နှာပြင် ကြည့်ရှုချိန်", pos: "noun", ipa: "/skriːn taɪm/", example: "Children should limit their screen time.", exampleMm: "ကလေးတွေ မျက်နှာပြင် ကြည့်ချိန်ကို ကန့်သတ်သင့်တယ်။", collocations: ["reduce screen time", "daily screen time"], topic: "technology", level: "B1" },
+    ],
+    sections: [
+      {
+        heading: "၁။ နည်းပညာ ဝေါဟာရ",
+        body: [
+          "စက်ပစ္စည်း — smartphone, laptop, tablet, charger, headphones, router, printer။",
+          "အင်တာနက် လုပ်ဆောင်ချက် — browse, search, upload, download, stream, log in, log out, sign up, install, update, back up။",
+          "အွန်လိုင်း လုံခြုံရေး — password, two-factor authentication, phishing, scam, malware, privacy setting, data breach။",
+          "အလုပ်ခွင် နည်းပညာ — video call, cloud storage, shared document, remote work, online meeting။",
+        ],
+        table: {
+          headers: ["စကားလုံး", "မြန်မာ", "သတိထားရန်"],
+          rows: [
+            ["log in / log out", "ဝင်/ထွက်", "log in to an account"],
+            ["upload / download", "တင်/ဆွဲ", "upload to the cloud, download from the site"],
+            ["install", "တပ်ဆင်", "install an app"],
+            ["back up", "အရန်သိမ်း", "back up your files"],
+          ],
+        },
+      },
+      {
+        heading: "၂။ ကောင်းကျိုး နှင့် ဆိုးကျိုး ဆွေးနွေးခြင်း",
+        body: [
+          "ကောင်းကျိုး — Technology makes communication faster. It gives access to education. It saves time and money.",
+          "ဆိုးကျိုး — It can reduce face-to-face contact. It may cause health problems. Fake news spreads quickly online.",
+          "နှိုင်းယှဉ်ရန် စကားစု — On the one hand ..., on the other hand ...။ While ... , ...။ Although ... , ...။",
+          "ထင်မြင်ချက် ဖော်ပြရန် — In my opinion, ... / I believe that ... / It seems to me that ... / Personally, I think ...။",
+        ],
+      },
+      {
+        heading: "၃။ အွန်လိုင်း လုံခြုံရေး အကြံပြုချက်များ",
+        body: [
+          "Do not share your password with anyone. Use different passwords for different accounts.",
+          "Enable two-factor authentication when it is available. Check links before you click them.",
+          "Be careful with personal information on social media; adjust your privacy settings.",
+          "If something looks too good to be true (e.g. a prize you did not enter), it is probably a scam.",
+        ],
+      },
+    ],
+    examples: [
+      { en: "I use my laptop for online classes and my phone for messages.", mm: "ကျွန်တော် အွန်လိုင်း အတန်းအတွက် လက်တော့ပ်နဲ့ စာတိုပို့ဖို့ ဖုန်းကို သုံးတယ်။" },
+      { en: "Although technology connects people, it can also make them feel lonely.", mm: "နည်းပညာက လူတွေကို ချိတ်ဆက်ပေးပေမယ့် အထီးကျန်စေနိုင်တယ်။" },
+      { en: "Please back up your files before you update the system.", mm: "စနစ် update မလုပ်ခင် ဖိုင်တွေကို အရန်သိမ်းထားပါ။" },
+      { en: "In my opinion, screen time should be limited for young children.", mm: "ကျွန်တော့်အမြင်အရ ကလေးငယ်တွေအတွက် မျက်နှာပြင် ကြည့်ချိန်ကို ကန့်သတ်သင့်တယ်။" },
+      { en: "Never click a link in an email that asks for your password.", mm: "စကားဝှက် တောင်းသည့် အီးမေးလ်ထဲက လင့်ခ်ကို ဘယ်တော့မှ မနှိပ်ပါနဲ့။" },
+    ],
+    mistakes: [
+      { wrong: "I downloaded the file in my phone.", right: "I downloaded the file to my phone. / on my phone", why: "download to a device (ထည့်သိမ်း) သို့မဟုတ် on a device (ဖုန်းပေါ်တွင်) ကို သုံးသည်။ 'in' မသုံးပါ။" },
+      { wrong: "Technology is very useful, but it have some problems.", right: "Technology is very useful, but it has some problems.", why: "it + has (တတိယပုဂ္ဂိုလ် အနည်းကိန်း)။" },
+      { wrong: "I am agree with this idea.", right: "I agree with this idea.", why: "agree သည် ကြိယာ ဖြစ်သောကြောင့် am မလိုပါ။" },
+    ],
+    guided: [
+      { id: "c4-g1", type: "mcq", prompt: "You keep important files safe by making a copy. You ___ them ___.", promptMm: "အရန်သိမ်းခြင်းကို ဖော်ပြသည့် စကားစုကို ရွေးပါ။", options: ["back / up", "log / in", "sign / up", "turn / off"], answer: 0, explanation: "back up = အရန်သိမ်းသည်။", topic: "technology", level: "B1" },
+      { id: "c4-g2", type: "fill", prompt: "Use a strong ___ and do not share it.", promptMm: "စကားဝှက် ဖြည့်ပါ။", answers: ["password"], explanation: "password = စကားဝှက်။", topic: "technology", level: "B1" },
+      { id: "c4-g3", type: "mcq", prompt: "Which sentence introduces a contrasting point?", promptMm: "ဆန့်ကျင်ချက် ဖော်ပြသည့် စကားလုံးကို ရွေးပါ။", options: ["Moreover, it is cheap.", "On the other hand, it can be harmful.", "For example, students use it.", "In addition, it saves time."], answer: 1, explanation: "on the other hand သည် ဆန့်ကျင်ဘက် အမြင်ကို ဖော်ပြသည်။", topic: "technology", level: "B1" },
+      { id: "c4-g4", type: "correct", prompt: "Correct: I am agree that technology help us.", promptMm: "ဝါကျကို ပြင်ပါ။", answers: ["I agree that technology helps us.", "I agree that technology helps us"], explanation: "agree သည် ကြိယာ ဖြစ်သောကြောင့် am မလိုပါ။ technology သည် အနည်းကိန်း ဖြစ်သောကြောင့် helps ဖြစ်သည်။", topic: "technology", level: "B1" },
+    ],
+    independent: [
+      { id: "c4-i1", type: "fill", prompt: "Please ___ in to your account with your email and password.", promptMm: "အကောင့်ဝင်ရန် ကြိယာ ဖြည့်ပါ။", answers: ["log", "sign"], explanation: "log in / sign in = အကောင့်ဝင်သည်။", topic: "technology", level: "B1" },
+      { id: "c4-i2", type: "translate", prompt: "Translate: ကျွန်တော့်အမြင်အရ နည်းပညာက ပညာရေးအတွက် အလွန်အသုံးဝင်တယ်။ ဒါပေမယ့် ကလေးတွေ မျက်နှာပြင် ကြည့်ချိန် ကန့်သတ်သင့်တယ်။", promptMm: "မြန်မာစကားကို အင်္ဂလိပ်လို ပြန်ဆိုပါ။", answers: ["In my opinion, technology is very useful for education. However, children should limit their screen time.", "In my opinion, technology is very useful for education, but children should limit their screen time.", "Personally, I think technology is very useful for education. However, children should limit their screen time."], explanation: "ထင်မြင်ချက် + ဆန့်ကျင်ချက် ကို however/but ဖြင့် ဆက်သည်။", topic: "technology", level: "B1" },
+      { id: "c4-i3", type: "mcq", prompt: "Which is the safest action?", promptMm: "အကောင်းဆုံး လုံခြုံရေး လုပ်ဆောင်ချက်ကို ရွေးပါ။", options: ["Use the same password everywhere.", "Share your password with a friend.", "Enable two-factor authentication.", "Click every link in your email."], answer: 2, explanation: "two-factor authentication သည် အကောင့် လုံခြုံရေးကို မြှင့်တင်သည်။", topic: "technology", level: "B1" },
+      { id: "c4-i4", type: "order", prompt: "Arrange the sentence.", promptMm: "ဝါကျ ဖြစ်အောင် စီပါ။", tokens: ["Online", "privacy", "is", "important", "for", "everyone"], answers: ["Online privacy is important for everyone"], explanation: "Online privacy + is + adjective + for + noun။", topic: "technology", level: "B1" },
+    ],
+    review: [
+      { q: "upload နှင့် download ကွာခြားချက်က ဘာနည်း။", a: "upload = ကိုယ့်စက်မှ အင်တာနက်ပေါ် တင်သည်။ download = အင်တာနက်မှ ကိုယ့်စက်ထဲ ဆွဲသည်။" },
+      { q: "ကောင်းကျိုး/ဆိုးကျိုး ဆွေးနွေးရာတွင် ဘယ်စကားစု သုံးသနည်း။", a: "On the one hand ... On the other hand ... / While ... / Although ...။" },
+      { q: "လုံခြုံသော စကားဝှက် လုပ်ဆောင်ချက် ၂ ခု ပြောပါ။", a: "အကောင့်တစ်ခုစီအတွက် မတူသော စကားဝှက် သုံးခြင်း၊ two-factor authentication ဖွင့်ခြင်း။" },
+    ],
+    summary: [
+      "နည်းပညာ ဝေါဟာရသည် စက်ပစ္စည်း၊ လုပ်ဆောင်ချက်နှင့် လုံခြုံရေး အုပ်စုအလိုက် ရှိသည်။",
+      "ကောင်းကျိုး/ဆိုးကျိုး ဆွေးနွေးရာတွင် ဆက်စပ်စကားလုံးများ လိုအပ်သည်။",
+      "အွန်လိုင်း လုံခြုံရေးသည် ကိုယ်ရေးအချက်အလက် ကာကွယ်ရေးအတွက် အရေးကြီးသည်။",
+    ],
+    mastery: [
+      "နည်းပညာ စကားလုံး ၁၀ လုံးကို ဝါကျထဲ သုံးနိုင်သည်။",
+      "နည်းပညာအကြောင်း ထင်မြင်ချက် ၈၀ စကားလုံးဖြင့် ရေးနိုင်သည်။",
+      "လေ့ကျင့်ခန်း ၈၀% အထက် ရရှိသည်။",
+    ],
+    topics: ["technology", "opinion", "linking words"],
+  },
+  {
+    id: "c5-environment",
+    moduleId: "C",
+    title: "Environment and Climate",
+    titleMm: "ပတ်ဝန်းကျင် နှင့် ရာသီဥတု",
+    level: "B2",
+    minutes: 24,
+    summaryLine: "ပတ်ဝန်းကျင် ပြဿနာများ၊ ဖြေရှင်းနည်းများနှင့် အကြောင်းအရာ ဆွေးနွေးရာတွင် သုံးသည့် စကားလုံးများကို လေ့လာမည်။",
+    objectives: [
+      "ပတ်ဝန်းကျင် ဝေါဟာရ ၁၂ လုံးကို သိရမည်။",
+      "ပြဿနာ — အကြောင်းရင်း — ဖြေရှင်းနည်း ဖွဲ့စည်းပုံဖြင့် ရေးနိုင်ရမည်။",
+      "အကြောင်းအရာ တစ်ခုအပေါ် ထင်မြင်ချက်ကို အကြောင်းပြချက်ဖြင့် ဖော်ပြနိုင်ရမည်။",
+    ],
+    vocab: [
+      { en: "climate change", mm: "ရာသီဥတု ပြောင်းလဲမှု", pos: "noun", ipa: "/ˈklaɪ.mət tʃeɪndʒ/", example: "Climate change affects rainfall patterns.", exampleMm: "ရာသီဥတု ပြောင်းလဲမှုက မိုးရွာသွန်းမှု ပုံစံကို သက်ရောက်စေတယ်။", collocations: ["tackle climate change", "climate change impact"], topic: "environment", level: "B2" },
+      { en: "pollution", mm: "ညစ်ညမ်းမှု", pos: "noun", ipa: "/pəˈluː.ʃən/", example: "Air pollution is a serious problem in big cities.", exampleMm: "မြို့ကြီးတွေမှာ လေထု ညစ်ညမ်းမှုက ပြင်းထန်တဲ့ ပြဿနာ ဖြစ်တယ်။", collocations: ["air pollution", "reduce pollution"], topic: "environment", level: "B2" },
+      { en: "sustainable", mm: "ရေရှည် တည်တံ့နိုင်သော", pos: "adjective", ipa: "/səˈsteɪ.nə.bəl/", example: "We need sustainable solutions, not quick fixes.", exampleMm: "ကျွန်တော်တို့အတွက် ရေရှည်တည်တံ့တဲ့ ဖြေရှင်းနည်းတွေ လိုအပ်တယ်၊ ခဏတာ ဖြေရှင်းနည်း မဟုတ်ဘူး။", collocations: ["sustainable development", "sustainable energy"], topic: "environment", level: "B2" },
+      { en: "emissions", mm: "ထုတ်လွှတ်မှု (ဓာတ်ငွေ့)", pos: "noun", ipa: "/iˈmɪʃ.ənz/", example: "The government plans to cut carbon emissions.", exampleMm: "အစိုးရက ကာဗွန် ထုတ်လွှတ်မှု လျှော့ချရန် စီစဉ်နေတယ်။", collocations: ["carbon emissions", "reduce emissions"], topic: "environment", level: "B2" },
+      { en: "deforestation", mm: "သစ်တော ခုတ်လှဲခြင်း", pos: "noun", ipa: "/ˌdiː.fɒr.ɪˈsteɪ.ʃən/", example: "Deforestation destroys animal habitats.", exampleMm: "သစ်တော ခုတ်လှဲခြင်းက တိရစ္ဆာန်တွေ နေထိုင်ရာ နေရာကို ဖျက်ဆီးတယ်။", collocations: ["illegal deforestation", "stop deforestation"], topic: "environment", level: "B2" },
+      { en: "renewable energy", mm: "ပြန်လည် ပြည့်ဖြိုးသော စွမ်းအင်", pos: "noun", ipa: "/rɪˈnjuː.ə.bəl ˈen.ə.dʒi/", example: "Solar power is a form of renewable energy.", exampleMm: "နေရောင်ခြည် စွမ်းအင်က ပြန်လည်ပြည့်ဖြိုးတဲ့ စွမ်းအင် တစ်မျိုး ဖြစ်တယ်။", collocations: ["invest in renewable energy"], topic: "environment", level: "B2" },
+    ],
+    sections: [
+      {
+        heading: "၁။ ပြဿနာ နှင့် အကြောင်းရင်း",
+        body: [
+          "အဓိက ပြဿနာများ — climate change, air/water pollution, deforestation, plastic waste, loss of biodiversity, water shortage။",
+          "အကြောင်းရင်းများ — burning fossil fuels, industrial activity, cutting down forests, single-use plastics, population growth။",
+          "အကျိုးဆက်များ — rising temperatures, extreme weather, flooding, droughts, health problems, extinction of species။",
+          "ဤအကြောင်းအရာတွင် အသုံးဝင်သော အသုံးအနှုန်း — lead to (ဖြစ်စေသည်), result in, be caused by, contribute to။",
+        ],
+        table: {
+          headers: ["ကြိယာ စကားစု", "အဓိပ္ပာယ်", "ဥပမာ"],
+          rows: [
+            ["lead to", "ဖြစ်ပေါ်စေသည်", "Deforestation leads to flooding."],
+            ["result in", "ရလဒ်အဖြစ် ဖြစ်ပေါ်သည်", "Heavy rain resulted in floods."],
+            ["be caused by", "ကြောင့် ဖြစ်သည်", "The damage was caused by the storm."],
+            ["contribute to", "အထောက်အကူပြုသည်", "Cars contribute to air pollution."],
+          ],
+        },
+      },
+      {
+        heading: "၂။ ဖြေရှင်းနည်းများ",
+        body: [
+          "တစ်ဦးချင်း လုပ်ဆောင်နိုင်သည့် အရာ — reduce, reuse, recycle; use public transport; save water and electricity; avoid single-use plastic။",
+          "အစိုးရ/အဖွဲ့အစည်း အဆင့် — invest in renewable energy, enforce environmental laws, protect forests, tax pollution။",
+          "ဖြေရှင်းနည်း ဖော်ပြရာတွင် modal passive ကို သုံးနိုင်သည် — Plastic bags should be banned. More trees must be planted.",
+        ],
+      },
+      {
+        heading: "၃။ ဆွေးနွေးချက် ရေးပုံ",
+        body: [
+          "အကြောင်းအရာ တစ်ခုအပေါ် ဆွေးနွေးရာတွင် ပြဿနာ → အကြောင်းရင်း → အကျိုးဆက် → ဖြေရှင်းနည်း → ကောက်ချက် အစဉ်ဖြင့် ရေးသည်။",
+          "အကြောင်းပြချက် ပေးရာတွင် because, since, as, therefore, as a result ကို သုံးသည်။",
+          "ခိုင်မာသော ထင်မြင်ချက် ဖော်ပြရန် — It is clear that ... / There is no doubt that ... / The evidence suggests that ...။ သို့သော် အချက်အလက် အထောက်အထား မရှိဘဲ မပြောသင့်ပါ။",
+        ],
+      },
+    ],
+    examples: [
+      { en: "Air pollution in Yangon is mainly caused by old vehicles and construction dust.", mm: "ရန်ကုန်ရဲ့ လေထု ညစ်ညမ်းမှုက အဓိကအားဖြင့် ကားဟောင်းတွေနဲ့ ဆောက်လုပ်ရေး ဖုန်မှုန့်ကြောင့် ဖြစ်တယ်။" },
+      { en: "If we do not reduce plastic waste, our rivers will become more polluted.", mm: "ပလတ်စတစ် အမှိုက် မလျှော့ချရင် ကျွန်တော်တို့ မြစ်တွေ ပိုညစ်ညမ်းလာမယ်။" },
+      { en: "Renewable energy should be promoted to reduce carbon emissions.", mm: "ကာဗွန် ထုတ်လွှတ်မှု လျှော့ချရန် ပြန်လည် ပြည့်ဖြိုးသော စွမ်းအင်ကို မြှင့်တင်သင့်တယ်။" },
+      { en: "Although individual actions matter, governments must also take responsibility.", mm: "တစ်ဦးချင်း လုပ်ဆောင်ချက်တွေ အရေးကြီးပေမယ့် အစိုးရတွေလည်း တာဝန်ယူရမယ်။" },
+      { en: "Deforestation not only destroys habitats but also increases the risk of flooding.", mm: "သစ်တော ခုတ်လှဲခြင်းက နေထိုင်ရာ နေရာတွေကို ဖျက်ဆီးရုံသာမက ရေကြီးနိုင်ခြေကိုလည်း တိုးစေတယ်။" },
+    ],
+    mistakes: [
+      { wrong: "Pollution is cause by cars.", right: "Pollution is caused by cars.", why: "passive တွင် be + V3 (caused) လိုအပ်သည်။" },
+      { wrong: "Deforestation leads flooding.", right: "Deforestation leads to flooding.", why: "lead to သည် ဝိဘတ် to နှင့် တွဲသည်။" },
+      { wrong: "We should to reduce plastic.", right: "We should reduce plastic.", why: "modal ပြီးနောက် base verb သုံးသည်။" },
+    ],
+    guided: [
+      { id: "c5-g1", type: "mcq", prompt: "Air pollution ___ health problems.", promptMm: "အကြောင်းရင်း-အကျိုးဆက် ဖော်ပြရန် သင့်လျော်သည်ကို ရွေးပါ။", options: ["leads to", "leads", "results", "causes to"], answer: 0, explanation: "lead to = ဖြစ်ပေါ်စေသည်။", topic: "environment", level: "B2" },
+      { id: "c5-g2", type: "fill", prompt: "Solar and wind power are forms of ___ energy.", promptMm: "ပြန်လည် ပြည့်ဖြိုးသော စွမ်းအင် ဖြည့်ပါ။", answers: ["renewable"], explanation: "renewable energy = ပြန်လည် ပြည့်ဖြိုးသော စွမ်းအင်။", topic: "environment", level: "B2" },
+      { id: "c5-g3", type: "mcq", prompt: "Choose the correct passive sentence.", promptMm: "မှန်ကန်သော passive ဝါကျကို ရွေးပါ။", options: ["More trees must be planted.", "More trees must planted.", "More trees must be plant.", "More trees must being planted."], answer: 0, explanation: "modal passive = modal + be + V3။", topic: "environment", level: "B2" },
+      { id: "c5-g4", type: "correct", prompt: "Correct: The flood was caused by to cut down the forest.", promptMm: "ဝါကျကို ပြင်ပါ။", answers: ["The flood was caused by cutting down the forest.", "The flood was caused by deforestation."], explanation: "ဝိဘတ် by နောက်တွင် verb-ing သို့မဟုတ် နာမ် လာသည်။ 'to cut' မလာပါ။", topic: "environment", level: "B2" },
+    ],
+    independent: [
+      { id: "c5-i1", type: "fill", prompt: "Carbon ___ from factories contribute to climate change.", promptMm: "ထုတ်လွှတ်မှု ဖြည့်ပါ။", answers: ["emissions"], explanation: "emissions = ထုတ်လွှတ်မှု (ဗဟုဝုဏ်း)။", topic: "environment", level: "B2" },
+      { id: "c5-i2", type: "translate", prompt: "Translate: ပလတ်စတစ် အမှိုက်ကို လျှော့ချဖို့ လူတိုင်း တာဝန်ရှိတယ်။", promptMm: "မြန်မာစကားကို အင်္ဂလိပ်လို ပြန်ဆိုပါ။", answers: ["Everyone is responsible for reducing plastic waste.", "Everyone has a responsibility to reduce plastic waste.", "We are all responsible for reducing plastic waste."], explanation: "responsible for + verb-ing ပုံစံ သုံးသည်။", topic: "environment", level: "B2" },
+      { id: "c5-i3", type: "mcq", prompt: "Which sentence gives a solution?", promptMm: "ဖြေရှင်းနည်း ဖော်ပြသည့် ဝါကျကို ရွေးပါ။", options: ["Air pollution is increasing.", "Governments should invest in public transport.", "Many people die from pollution.", "The problem is very serious."], answer: 1, explanation: "should invest ... သည် ဖြေရှင်းနည်း/အကြံပြုချက် ဖြစ်သည်။", topic: "environment", level: "B2" },
+      { id: "c5-i4", type: "order", prompt: "Arrange the sentence.", promptMm: "ဝါကျ ဖြစ်အောင် စီပါ။", tokens: ["Deforestation", "not", "only", "destroys", "habitats", "but", "also", "causes", "flooding"], answers: ["Deforestation not only destroys habitats but also causes flooding"], explanation: "not only ... but also ... ပုံစံဖြင့် အချက်နှစ်ခုကို ဆက်သည်။", topic: "environment", level: "B2" },
+    ],
+    review: [
+      { q: "lead to နှင့် result in ၏ အဓိပ္ပာယ်က ဘာနည်း။", a: "နှစ်ခုစလုံး 'ဖြစ်ပေါ်စေသည်' ဟု အဓိပ္ပာယ်ရသည်။" },
+      { q: "climate change ဖြစ်စေသော အကြောင်းရင်း ၃ ခု ပြောပါ။", a: "fossil fuel လောင်ကျွမ်းမှု၊ သစ်တော ခုတ်လှဲခြင်း၊ စက်မှုလုပ်ငန်း ထုတ်လွှတ်မှု။" },
+      { q: "ဖြေရှင်းနည်း ဖော်ပြရာတွင် ဘယ် modal သုံးနိုင်သနည်း။", a: "should / must (passive တွင် should be + V3)။" },
+    ],
+    summary: [
+      "ပတ်ဝန်းကျင် ပြဿနာများကို အကြောင်းရင်း-အကျိုးဆက် ဖွဲ့စည်းပုံဖြင့် ရှင်းပြသည်။",
+      "ဖြေရှင်းနည်းများကို modal passive ဖြင့် ဖော်ပြနိုင်သည်။",
+      "ဆွေးနွေးချက်တွင် ခိုင်မာသော အကြောင်းပြချက် လိုအပ်သည်။",
+    ],
+    mastery: [
+      "ပတ်ဝန်းကျင် စကားလုံး ၁၂ လုံးကို သုံးနိုင်သည်။",
+      "ပြဿနာ-အကြောင်းရင်း-ဖြေရှင်းနည်း စာပိုဒ် ၁၀၀ စကားလုံးဖြင့် ရေးနိုင်သည်။",
+      "လေ့ကျင့်ခန်း ၈၀% အထက် ရရှိသည်။",
+    ],
+    topics: ["environment", "passive voice", "cause and effect"],
+  },
+];

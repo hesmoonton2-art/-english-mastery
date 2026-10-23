@@ -1,0 +1,126 @@
+import type { ListeningScript } from "@/lib/types";
+
+/**
+ * Original listening scripts. This project ships NO audio files, so the UI never shows
+ * a play button. Learners read the script aloud (or have someone read it) and answer.
+ */
+export const listeningScripts: ListeningScript[] = [
+  {
+    id: "l1-cafe-order",
+    title: "At the Café",
+    titleMm: "ကော်ဖီဆိုင်တွင်",
+    level: "A1",
+    minutes: 8,
+    context: "A customer orders breakfast at a small café.",
+    speedNote: "A2 ခန့် — နှေးနှေး၊ ရှင်းရှင်း ဖတ်ပါ။",
+    lines: [
+      { speaker: "Assistant", en: "Good morning. What can I get for you?", mm: "မင်္ဂလာနံနက်ခင်းပါ။ ဘာယူမလဲ။" },
+      { speaker: "Customer", en: "Can I have a cup of tea and two eggs, please?", mm: "လက်ဖက်ရည် တစ်ခွက်နဲ့ ကြက်ဥ နှစ်လုံး ရနိုင်မလား။" },
+      { speaker: "Assistant", en: "Of course. Would you like the eggs fried or boiled?", mm: "ရပါတယ်။ ကြက်ဥကို ကြော်ထားတာ လား၊ ပြုတ်ထားတာ လား။" },
+      { speaker: "Customer", en: "Boiled, please. And do you have brown bread?", mm: "ပြုတ်ထားတာ ပါ။ ညိုတဲ့ ပေါင်မုန့် ရှိလား။" },
+      { speaker: "Assistant", en: "Sorry, we only have white bread today.", mm: "တောင်းပန်ပါတယ်၊ ဒီနေ့ ပေါင်မုန့်ဖြူပဲ ရှိတယ်။" },
+      { speaker: "Customer", en: "That's fine. How much is it?", mm: "ရပါတယ်။ ဘယ်လောက်လဲ။" },
+      { speaker: "Assistant", en: "That's 3,500 kyat altogether.", mm: "စုစုပေါင်း ၃,၅၀၀ ကျပ်ပါ။" },
+      { speaker: "Customer", en: "Here you are. Thank you.", mm: "ဒီမှာပါ။ ကျေးဇူးတင်ပါတယ်။" },
+    ],
+    questions: [
+      { id: "l1-q1", type: "mcq", prompt: "What does the customer order to drink?", promptMm: "ဖောက်သည်က ဘာသောက်ရန် မှာသလဲ။", options: ["coffee", "tea", "water", "juice"], answer: 1, explanation: "'a cup of tea' ဟု မှာထားသည်။", topic: "listening for detail", level: "A1" },
+      { id: "l1-q2", type: "mcq", prompt: "How does the customer want the eggs?", promptMm: "ကြက်ဥကို ဘယ်လို လုပ်ထားတာ လိုချင်သနည်း။", options: ["fried", "boiled", "scrambled", "not at all"], answer: 1, explanation: "'Boiled, please' ဟု ဖြေထားသည်။", topic: "listening for detail", level: "A1" },
+      { id: "l1-q3", type: "mcq", prompt: "Why can the customer not get brown bread?", promptMm: "ညိုသော ပေါင်မုန့် မရနိုင်ရသည့် အကြောင်းက ဘာနည်း။", options: ["It is too expensive.", "The café only has white bread today.", "The café is closed.", "They do not sell bread."], answer: 1, explanation: "ဆိုင်က ဒီနေ့ ပေါင်မုန့်ဖြူသာ ရှိသည်ဟု ပြောသည်။", topic: "listening for detail", level: "A1" },
+      { id: "l1-q4", type: "fill", prompt: "The total price is 3,500 ___.", promptMm: "စုစုပေါင်း ငွေပမာဏကို ဖြည့်ပါ။", answers: ["kyat", "Kyats"], explanation: "3,500 kyat — မြန်မာငွေ ယူနစ်။", topic: "listening for detail", level: "A1" },
+    ],
+    strategy: [
+      "မဖတ်မီ မေးခွန်းများကို အရင်ဖတ်ပါ — ဘာကို ရှာရမည် သိစေသည်။",
+      "စကားပြောသူ နှစ်ဦး၏ အခန်းကဏ္ဍကို ခွဲပါ (Assistant / Customer)။",
+      "ဂဏန်းနှင့် အစားအစာ အမည်များကို မှတ်ပါ။",
+    ],
+  },
+  {
+    id: "l2-library-announcement",
+    title: "Library Announcement",
+    titleMm: "စာကြည့်တိုက် ကြေညာချက်",
+    level: "B1",
+    minutes: 10,
+    context: "A university library makes an end-of-term announcement.",
+    speedNote: "B1 ခန့် — သဘာဝ စကားပြောနှုန်းဖြင့် ဖတ်ပါ။",
+    lines: [
+      { speaker: "Announcer", en: "Good afternoon, everyone. This is an important announcement for all students.", mm: "မင်္ဂလာပါ အားလုံး။ ကျောင်းသားအားလုံးအတွက် အရေးကြီးသော ကြေညာချက် ဖြစ်ပါသည်။" },
+      { speaker: "Announcer", en: "Because the examination period begins next Monday, the library will extend its opening hours.", mm: "နောက်တနင်္လာနေ့ စာမေးပွဲ ကာလ စတင်မည် ဖြစ်သောကြောင့် စာကြည့်တိုက်က ဖွင့်ချိန်ကို တိုးချဲ့ပါမည်။" },
+      { speaker: "Announcer", en: "From Monday, the library will open at seven in the morning and close at eleven at night.", mm: "တနင်္လာနေ့မှစ၍ စာကြည့်တိုက်က မနက် ၇ နာရီ ဖွင့်ပြီး ည ၁၁ နာရီ ပိတ်မည်။" },
+      { speaker: "Announcer", en: "However, the third floor will be closed for repairs until the end of the month.", mm: "သို့သော် တတိယထပ်ကို လပြည့်အထိ ပြုပြင်ရန် ပိတ်ထားမည်။" },
+      { speaker: "Announcer", en: "Group study rooms must be booked online at least one day in advance.", mm: "အဖွဲ့လိုက် စာကျက်ခန်းများကို အနည်းဆုံး တစ်ရက်ကြို အွန်လိုင်းမှ ကြိုတင်မှာယူရမည်။" },
+      { speaker: "Announcer", en: "Please remember to bring your student card. Students without a card will not be allowed to enter after eight p.m.", mm: "ကျောင်းသားကတ် ယူလာရန် မမေ့ပါနှင့်။ ကတ်မရှိသော ကျောင်းသားများကို ည ၈ နာရီ နောက်ပိုင်း ဝင်ခွင့်မပြုပါ။" },
+      { speaker: "Announcer", en: "If you have questions, please ask at the front desk. Thank you.", mm: "မေးခွန်းရှိပါက ဧည့်ကြိုကောင်တာတွင် မေးပါ။ ကျေးဇူးတင်ပါသည်။" },
+    ],
+    questions: [
+      { id: "l2-q1", type: "mcq", prompt: "Why will the library extend its hours?", promptMm: "စာကြည့်တိုက် ဖွင့်ချိန် တိုးချဲ့ရသည့် အကြောင်းက ဘာနည်း။", options: ["because of a public holiday", "because the examination period begins", "because of a repair", "because of a new manager"], answer: 1, explanation: "စာမေးပွဲ ကာလ စတင်မည် ဖြစ်သောကြောင့် ဖြစ်သည်။", topic: "listening for detail", level: "B1" },
+      { id: "l2-q2", type: "mcq", prompt: "What time will the library close from Monday?", promptMm: "တနင်္လာနေ့မှစ၍ စာကြည့်တိုက် ဘယ်အချိန် ပိတ်မည်နည်း။", options: ["7 p.m.", "9 p.m.", "11 p.m.", "midnight"], answer: 2, explanation: "ည ၁၁ နာရီ ပိတ်မည်ဟု ကြေညာသည်။", topic: "listening for detail", level: "B1" },
+      { id: "l2-q3", type: "mcq", prompt: "Which floor is closed?", promptMm: "ဘယ်ထပ်ကို ပိတ်ထားသနည်း။", options: ["first", "second", "third", "fourth"], answer: 2, explanation: "တတိယထပ်ကို ပြုပြင်ရန် ပိတ်ထားသည်။", topic: "listening for detail", level: "B1" },
+      { id: "l2-q4", type: "fill", prompt: "Group study rooms must be booked at least one ___ in advance.", promptMm: "ကြိုတင်မှာယူရမည့် အချိန်ကို ဖြည့်ပါ။", answers: ["day"], explanation: "one day in advance = တစ်ရက်ကြို။", topic: "listening for detail", level: "B1" },
+      { id: "l2-q5", type: "mcq", prompt: "What happens to students without a card after 8 p.m.?", promptMm: "ည ၈ နာရီ နောက်ပိုင်း ကတ်မရှိသော ကျောင်းသားများ ဘာဖြစ်မည်နည်း။", options: ["They pay a fine.", "They cannot enter.", "They must wait outside.", "They can enter with a friend."], answer: 1, explanation: "ကတ်မရှိလျှင် ည ၈ နာရီ နောက်ပိုင်း ဝင်ခွင့် မပြုပါ။", topic: "listening for detail", level: "B1" },
+    ],
+    strategy: [
+      "ကြေညာချက်များတွင် အချိန် နှစ်ခု (မူလနှင့် အသစ်) ကို ခွဲခြားပါ။",
+      "အခြေအနေ ပြ စကားလုံးများ (however, because, until) ကို မှတ်ပါ။",
+      "နံပါတ်နှင့် ထပ် အမည်များကို ချက်ချင်း မှတ်ပါ။",
+    ],
+  },
+  {
+    id: "l3-interview",
+    title: "A Short Job Interview",
+    titleMm: "အလုပ်အင်တာဗျူး အတို",
+    level: "B2",
+    minutes: 12,
+    context: "A candidate answers questions about experience and skills.",
+    speedNote: "B2 ခန့် — သဘာဝ စကားပြောနှုန်း၊ အနည်းငယ် မြန်သည်။",
+    lines: [
+      { speaker: "Interviewer", en: "Thanks for coming. Could you tell me a little about your current role?", mm: "လာပေးတာ ကျေးဇူးတင်ပါတယ်။ သင့်လက်ရှိ တာဝန်အကြောင်း နည်းနည်း ပြောပြနိုင်မလား။" },
+      { speaker: "Candidate", en: "Certainly. I work as a customer support officer at a telecom company. I handle enquiries by phone and email, and I train new team members.", mm: "ရပါတယ်။ ကျွန်တော် ဆက်သွယ်ရေးကုမ္ပဏီတစ်ခုမှာ ဖောက်သည် ကူညီရေး အရာရှိအဖြစ် အလုပ်လုပ်ပါတယ်။ ဖုန်းနဲ့ အီးမေးလ်ကနေ မေးမြန်းချက်တွေကို ကိုင်တွယ်ပြီး အဖွဲ့ဝင်အသစ်တွေကို လေ့ကျင့်ပေးပါတယ်။" },
+      { speaker: "Interviewer", en: "What is the most difficult part of that work?", mm: "အဲဒီအလုပ်မှာ အခက်ခဲဆုံး အပိုင်းက ဘာလဲ။" },
+      { speaker: "Candidate", en: "Probably handling complaints when the customer is angry. I have learned to listen first and not to interrupt, and to explain clearly what I can and cannot do.", mm: "ဖောက်သည် ဒေါသထွက်နေချိန် တိုင်ကြားချက်တွေကို ကိုင်တွယ်ရတာ ဖြစ်နိုင်ပါတယ်။ အရင်နားထောင်ပြီး မဖြတ်တောက်ဖို့၊ လုပ်နိုင်တာနဲ့ မလုပ်နိုင်တာကို ရှင်းရှင်းလင်းလင်း ရှင်းပြဖို့ သင်ယူခဲ့ပါတယ်။" },
+      { speaker: "Interviewer", en: "Why are you interested in this position?", mm: "ဒီရာထူးကို ဘာကြောင့် စိတ်ဝင်စားတာလဲ။" },
+      { speaker: "Candidate", en: "Your company works with international clients, and I would like to use my English more. I also enjoy solving problems and improving processes.", mm: "သင့်ကုမ္ပဏီက နိုင်ငံတကာ ဖောက်သည်တွေနဲ့ အလုပ်လုပ်တယ်၊ ကျွန်တော့် အင်္ဂလိပ်စာကို ပိုအသုံးချချင်ပါတယ်။ ပြဿနာတွေ ဖြေရှင်းတာနဲ့ လုပ်ငန်းစဉ်တွေ တိုးတက်အောင် လုပ်တာကိုလည်း နှစ်သက်ပါတယ်။" },
+      { speaker: "Interviewer", en: "Do you have any questions for us?", mm: "ကျွန်တော်တို့ကို မေးချင်တာ ရှိလား။" },
+      { speaker: "Candidate", en: "Yes. Could you tell me what success would look like in the first six months?", mm: "ရှိပါတယ်။ ပထမ ခြောက်လမှာ အောင်မြင်မှုဆိုတာ ဘယ်လိုပုံစံ ဖြစ်မလဲ ပြောပြနိုင်မလား။" },
+    ],
+    questions: [
+      { id: "l3-q1", type: "mcq", prompt: "What is the candidate's current job?", promptMm: "ကိုယ်စားလှယ်လောင်း၏ လက်ရှိ အလုပ်က ဘာနည်း။", options: ["telecom engineer", "customer support officer", "teacher", "manager"], answer: 1, explanation: "သူက customer support officer ဖြစ်သည်။", topic: "listening for detail", level: "B2" },
+      { id: "l3-q2", type: "mcq", prompt: "What does the candidate say is hardest?", promptMm: "အခက်ခဲဆုံးအရာက ဘာနည်း။", options: ["training new staff", "handling angry customers' complaints", "writing emails", "working overtime"], answer: 1, explanation: "ဒေါသထွက်နေသော ဖောက်သည်များ၏ တိုင်ကြားချက်ကို ကိုင်တွယ်ရခြင်း ဖြစ်သည်။", topic: "listening for detail", level: "B2" },
+      { id: "l3-q3", type: "mcq", prompt: "Why does the candidate want this position?", promptMm: "ဤရာထူးကို လိုချင်ရသည့် အကြောင်းက ဘာနည်း။", options: ["higher salary only", "to use English with international clients and improve processes", "to stop working with customers", "to move abroad"], answer: 1, explanation: "နိုင်ငံတကာ ဖောက်သည်များနှင့် အင်္ဂလိပ်စာ သုံးလိုခြင်းနှင့် လုပ်ငန်းစဉ် တိုးတက်စေလိုခြင်း ဖြစ်သည်။", topic: "listening for detail", level: "B2" },
+      { id: "l3-q4", type: "mcq", prompt: "What does the candidate's question at the end show?", promptMm: "အဆုံးတွင် ကိုယ်စားလှယ်လောင်း မေးသည့် မေးခွန်းက ဘာကို ပြသနည်း။", options: ["He only cares about money.", "He is thinking about long-term performance.", "He did not listen.", "He wants to leave early."], answer: 1, explanation: "ပထမ ခြောက်လ အောင်မြင်မှု စံနှုန်းကို မေးခြင်းက ရေရှည် စွမ်းဆောင်ရည်ကို စဉ်းစားနေကြောင်း ပြသည်။", topic: "inference", level: "B2" },
+    ],
+    strategy: [
+      "အင်တာဗျူးတွင် အတွေ့အကြုံ → စိန်ခေါ်မှု → လှုံ့ဆော်မှု → မေးခွန်း အစဉ်ကို မှတ်ပါ။",
+      "ကိုယ်စားလှယ်လောင်း၏ စကားလုံးများမှ သဘောထားကို ခန့်မှန်းပါ။",
+      "'Probably', 'I would like to' ကဲ့သို့ နူးညံ့သော ဖော်ပြချက်များကို သတိထားပါ။",
+    ],
+  },
+  {
+    id: "l4-lecture-notes",
+    title: "Mini-Lecture: Sleep and Learning",
+    titleMm: "ဟောပြောချက် အတို — အိပ်စက်ခြင်းနှင့် သင်ယူမှု",
+    level: "C1",
+    minutes: 14,
+    context: "A short academic lecture with signposting language.",
+    speedNote: "C1 ခန့် — သဘာဝ ဟောပြောနှုန်း၊ ရပ်တန့်မှု အနည်းငယ်။",
+    lines: [
+      { speaker: "Lecturer", en: "In today's session, I want to examine the relationship between sleep and learning. I will make three main points.", mm: "ဒီနေ့ သင်ခန်းစာမှာ အိပ်စက်ခြင်းနဲ့ သင်ယူမှုကြား ဆက်စပ်မှုကို လေ့လာချင်ပါတယ်။ အဓိကအချက် သုံးခု ပြောပါမယ်။" },
+      { speaker: "Lecturer", en: "First, sleep is not a passive state. During deep sleep, the brain consolidates memories formed during the day. In other words, sleep helps to stabilise what has already been learned.", mm: "ပထမ၊ အိပ်စက်ခြင်းဟာ တက်ကြွမှုမရှိတဲ့ အခြေအနေ မဟုတ်ပါဘူး။ နက်ရှိုင်းတဲ့ အိပ်စက်မှုအတွင်းမှာ ဦးနှောက်က တစ်နေ့တာ ဖြစ်ပေါ်ခဲ့တဲ့ မှတ်ဉာဏ်တွေကို စုစည်းခိုင်မာစေပါတယ်။ တစ်နည်းအားဖြင့် အိပ်စက်မှုက သင်ယူပြီးသားအရာတွေကို တည်ငြိမ်စေပါတယ်။" },
+      { speaker: "Lecturer", en: "Second, the timing matters. Material studied shortly before sleep tends to be remembered better than material studied in the morning and not reviewed. This does not mean students should stay up late; it means that a short review before bed can be useful.", mm: "ဒုတိယ၊ အချိန်က အရေးကြီးပါတယ်။ အိပ်ရာမဝင်မီ ခဏလေ့လာတဲ့ အကြောင်းအရာက မနက်ခင်း လေ့လာပြီး မပြန်လည်သုံးသပ်တဲ့ အရာထက် ပိုမှတ်မိတတ်ပါတယ်။ ဒါပေမယ့် ကျောင်းသားတွေ အိပ်ရေးပျက်သင့်တယ်လို့ မဆိုလိုပါဘူး။ အိပ်ရာမဝင်မီ ပြန်လည်သုံးသပ်မှု အတိုလေးက အသုံးဝင်တယ်လို့သာ ဆိုလိုပါတယ်။" },
+      { speaker: "Lecturer", en: "Third, the amount matters. Most adults need seven to nine hours. Consistently sleeping less than six hours is associated with poorer attention and weaker memory performance.", mm: "တတိယ၊ ပမာဏက အရေးကြီးပါတယ်။ လူကြီးအများစုက ခုနစ်နာရီမှ ကိုးနာရီအထိ လိုအပ်ပါတယ်။ ခြောက်နာရီအောက် အမြဲအိပ်ခြင်းက အာရုံစူးစိုက်မှု ကျဆင်းခြင်းနဲ့ မှတ်ဉာဏ် စွမ်းဆောင်ရည် အားနည်းခြင်းတို့နဲ့ ဆက်စပ်နေပါတယ်။" },
+      { speaker: "Lecturer", en: "To summarise: protect your sleep, review briefly before bed, and avoid treating late-night study as a virtue. Next week we will look at the evidence on napping.", mm: "အနှစ်ချုပ်ရရင် အိပ်စက်မှုကို ကာကွယ်ပါ၊ အိပ်ရာမဝင်မီ ခဏပြန်လည်သုံးသပ်ပါ၊ ညဉ့်နက်အထိ စာကျက်ခြင်းကို ဂုဏ်ယူစရာအဖြစ် မသဘောထားပါနဲ့။ နောက်တစ်ပတ်မှာ တစ်မှေးအိပ်ခြင်း အထောက်အထားတွေကို ကြည့်ပါမယ်။" },
+    ],
+    questions: [
+      { id: "l4-q1", type: "mcq", prompt: "What is the lecture mainly about?", promptMm: "ဟောပြောချက်၏ အဓိကအကြောင်းအရာက ဘာနည်း။", options: ["how to cure insomnia", "the relationship between sleep and learning", "the history of sleep research", "how to take naps"], answer: 1, explanation: "အိပ်စက်ခြင်းနှင့် သင်ယူမှု ဆက်စပ်မှုကို အဓိကထား ဟောပြောသည်။", topic: "listening for gist", level: "C1" },
+      { id: "l4-q2", type: "mcq", prompt: "According to the lecturer, what happens during deep sleep?", promptMm: "ဟောပြောသူအရ နက်ရှိုင်းသော အိပ်စက်မှုအတွင်း ဘာဖြစ်သနည်း။", options: ["The brain rests completely.", "The brain consolidates memories.", "The body temperature rises.", "Dreams disappear."], answer: 1, explanation: "ဦးနှောက်က မှတ်ဉာဏ်များကို စုစည်းခိုင်မာစေသည်။", topic: "listening for detail", level: "C1" },
+      { id: "l4-q3", type: "mcq", prompt: "What does the lecturer NOT recommend?", promptMm: "ဟောပြောသူ မထောက်ခံသည့်အရာက ဘာနည်း။", options: ["reviewing briefly before bed", "sleeping seven to nine hours", "studying late into the night regularly", "protecting sleep"], answer: 2, explanation: "ညဉ့်နက်အထိ ပုံမှန် စာကျက်ခြင်းကို ဂုဏ်ယူစရာအဖြစ် မသဘောထားရန် ပြောသည်။", topic: "listening for detail", level: "C1" },
+      { id: "l4-q4", type: "fill", prompt: "Most adults need ___ to nine hours of sleep.", promptMm: "အိပ်ချိန် အပိုင်းအခြား ဖြည့်ပါ။", answers: ["seven", "7"], explanation: "ခုနစ်နာရီမှ ကိုးနာရီအထိ ဖြစ်သည်။", topic: "listening for detail", level: "C1" },
+      { id: "l4-q5", type: "mcq", prompt: "Which signposting phrase introduces the summary?", promptMm: "အနှစ်ချုပ် မိတ်ဆက်သည့် စကားစုကို ရွေးပါ။", options: ["In other words", "To summarise", "First", "Next week"], answer: 1, explanation: "To summarise = အနှစ်ချုပ်ရန်။", topic: "listening for structure", level: "C1" },
+    ],
+    strategy: [
+      "First / Second / Third / To summarise ကဲ့သို့ signposting စကားလုံးများကို မှတ်ပါ။",
+      "ဟောပြောသူက 'does not mean' ဟု ပြောလျှင် မှားယွင်းနိုင်သည့် အဓိပ္ပာယ်ကို ရှင်းနေခြင်း ဖြစ်သည်။",
+      "နောက်တစ်ပတ် အကြောင်းအရာကို မှတ်ထားခြင်းက ဖွဲ့စည်းပုံကို နားလည်စေသည်။",
+    ],
+  },
+];
